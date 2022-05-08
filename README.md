@@ -37,7 +37,7 @@ bash run_conll2003_distill_T3.sh # Start distillation
 ```
 To train teacher models, you should specify the output directory of saving model weights.
 
-To start distillation, you should also specify the trained teacher model directory.
+To start distillation, you should also specify the directory of trained teacher model.
 
 ### Machine Reading Comprehension Task
 ```
@@ -47,7 +47,7 @@ bash run_cmrc2018_distill_T3.sh # Start distillation
 ```
 To train teacher models, you should specify the pretrained model directory and output directory of saving model weights.
 
-To start distillation, you should also specify the trained teacher model directory.
+To start distillation, you should also specify the directory of trained teacher model.
 
 ### Check Performance
 You could use `check_model_performance.ipynb` to extract information about training and evaluatio results from logs under folder `log`.
