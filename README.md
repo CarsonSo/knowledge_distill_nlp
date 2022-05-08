@@ -49,5 +49,8 @@ To train teacher models, you should specify the pretrained model directory and o
 
 To start distillation, you should also specify the trained teacher model directory.
 
+### Check Performance
+You could use `check_model_performance.ipynb` to extract information about training and evaluatio results from logs under folder `log`.
+
 
 
