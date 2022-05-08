@@ -30,21 +30,21 @@ The dataset used in the project lies under folder 'data', which contains:
 ### Text Classification Task
 
 ### Sequence Labeling Task
-'''
+```
 cd TextBrewer/examples
 bash run_conll2003_train.sh # Train teacher model
 bash run_conll2003_distill_T3.sh # Start distillation
-'''
+```
 To train teacher models, you should specify the output directory of saving model weights.
 
 To start distillation, you should also specify the trained teacher model directory.
 
 ### Machine Reading Comprehension Task
-'''
+```
 cd TextBrewer/examples
 bash run_cmrc2018_train.sh.sh # Train teacher model
 bash run_cmrc2018_distill_T3.sh # Start distillation
-'''
+```
 To train teacher models, you should specify the pretrained model directory and output directory of saving model weights.
 
 To start distillation, you should also specify the trained teacher model directory.
