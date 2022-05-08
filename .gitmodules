@@ -1,0 +1,3 @@
+[submodule "TextBrewer"]
+	path = TextBrewer
+	url = https://github.com/airaria/TextBrewer.git
