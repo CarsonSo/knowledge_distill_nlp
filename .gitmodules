@@ -1,3 +1,6 @@
 [submodule "TextBrewer"]
 	path = TextBrewer
 	url = https://github.com/airaria/TextBrewer.git
+[submodule "data/cmrc2018"]
+	path = data/cmrc2018
+	url = https://github.com/ymcui/cmrc2018.git
