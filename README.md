@@ -19,7 +19,7 @@ We conducted 4 experiments on 3 downstream tasks: Text classification, Sequence 
 ## Installation
 To install pakage `TextBrewer`, follow [TextBrewer repo](https://github.com/airaria/TextBrewer).
 
-Another way to use codes of this repositary, you could install dependecies using 'pip install -r requirements.txt'.
+Another way to use codes of this repositary, you could install dependecies using `pip install -r requirements.txt`.
 
 ## Data
 The dataset used in the project lies under folder `data`, which contains:
