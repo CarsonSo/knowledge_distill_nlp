@@ -21,6 +21,8 @@ To install pakage `TextBrewer`, follow [TextBrewer repo](https://github.com/aira
 
 Another way to use codes of this repositary, you could install dependecies using `pip install -r requirements.txt`.
 
+To download RoBERTa-wwm-ext used in MRC task, follow [Chinese-BERT-wwm repo](https://github.com/ymcui/Chinese-BERT-wwm).
+
 ## Data
 The dataset used in the project lies under folder `data`, which contains:
 - coNLL-2003 (Named Entity Recognition)
