@@ -1,0 +1,234 @@
+nohup: ignoring input
+2022/05/06 02:40:11 - INFO - pytorch_pretrained_bert.modeling -  Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+2022/05/06 02:40:11 - INFO - pytorch_pretrained_bert.my_modeling -  Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+2022/05/06 02:40:11 - INFO - Main -  vocab_file:/home/hs3228/TextBrewer/model/chinese_roberta_wwm_ext_pytorch/vocab.txt
+2022/05/06 02:40:11 - INFO - Main -  output_dir:/home/hs3228/TextBrewer/output_model/cmrc/teacher/cmrc2018_base_lr3e4_teacher
+2022/05/06 02:40:11 - INFO - Main -  train_file:/home/hs3228/TextBrewer/data/cmrc2018/squad-style-data/cmrc2018_train.json
+2022/05/06 02:40:11 - INFO - Main -  predict_file:/home/hs3228/TextBrewer/data/cmrc2018/squad-style-data/cmrc2018_dev.json
+2022/05/06 02:40:11 - INFO - Main -  do_lower_case:True
+2022/05/06 02:40:11 - INFO - Main -  max_seq_length:512
+2022/05/06 02:40:11 - INFO - Main -  doc_stride:320
+2022/05/06 02:40:11 - INFO - Main -  max_query_length:64
+2022/05/06 02:40:11 - INFO - Main -  do_train:True
+2022/05/06 02:40:11 - INFO - Main -  do_predict:True
+2022/05/06 02:40:11 - INFO - Main -  train_batch_size:12
+2022/05/06 02:40:11 - INFO - Main -  predict_batch_size:8
+2022/05/06 02:40:11 - INFO - Main -  learning_rate:3e-05
+2022/05/06 02:40:11 - INFO - Main -  num_train_epochs:4.0
+2022/05/06 02:40:11 - INFO - Main -  warmup_proportion:0.1
+2022/05/06 02:40:11 - INFO - Main -  n_best_size:20
+2022/05/06 02:40:11 - INFO - Main -  max_answer_length:30
+2022/05/06 02:40:11 - INFO - Main -  verbose_logging:False
+2022/05/06 02:40:11 - INFO - Main -  no_cuda:False
+2022/05/06 02:40:11 - INFO - Main -  gradient_accumulation_steps:1
+2022/05/06 02:40:11 - INFO - Main -  local_rank:-1
+2022/05/06 02:40:11 - INFO - Main -  fp16:False
+2022/05/06 02:40:11 - INFO - Main -  random_seed:9580
+2022/05/06 02:40:11 - INFO - Main -  fake_file_1:None
+2022/05/06 02:40:11 - INFO - Main -  fake_file_2:None
+2022/05/06 02:40:11 - INFO - Main -  load_model_type:bert
+2022/05/06 02:40:11 - INFO - Main -  weight_decay_rate:0.01
+2022/05/06 02:40:11 - INFO - Main -  do_eval:True
+2022/05/06 02:40:11 - INFO - Main -  PRINT_EVERY:200
+2022/05/06 02:40:11 - INFO - Main -  weight:1.0
+2022/05/06 02:40:11 - INFO - Main -  ckpt_frequency:1
+2022/05/06 02:40:11 - INFO - Main -  tuned_checkpoint_T:None
+2022/05/06 02:40:11 - INFO - Main -  tuned_checkpoint_S:None
+2022/05/06 02:40:11 - INFO - Main -  init_checkpoint_S:/home/hs3228/TextBrewer/model/chinese_roberta_wwm_ext_pytorch/pytorch_model.bin
+2022/05/06 02:40:11 - INFO - Main -  bert_config_file_T:none
+2022/05/06 02:40:11 - INFO - Main -  bert_config_file_S:../student_config/roberta_wwm_config/bert_config.json
+2022/05/06 02:40:11 - INFO - Main -  temperature:1
+2022/05/06 02:40:11 - INFO - Main -  teacher_cached:False
+2022/05/06 02:40:11 - INFO - Main -  s_opt1:30.0
+2022/05/06 02:40:11 - INFO - Main -  s_opt2:0.0
+2022/05/06 02:40:11 - INFO - Main -  s_opt3:1.0
+2022/05/06 02:40:11 - INFO - Main -  schedule:slanted_triangular
+2022/05/06 02:40:11 - INFO - Main -  null_score_diff_threshold:99.0
+2022/05/06 02:40:11 - INFO - Main -  tag:RB
+2022/05/06 02:40:11 - INFO - Main -  no_inputs_mask:False
+2022/05/06 02:40:11 - INFO - Main -  no_logits:False
+2022/05/06 02:40:11 - INFO - Main -  output_att_score:true
+2022/05/06 02:40:11 - INFO - Main -  output_att_sum:false
+2022/05/06 02:40:11 - INFO - Main -  output_encoded_layers:false
+2022/05/06 02:40:11 - INFO - Main -  output_attention_layers:false
+2022/05/06 02:40:11 - INFO - Main -  matches:None
+2022/05/06 02:40:12 - INFO - Main -  device cuda n_gpu 1 distributed training False
+2022/05/06 02:40:12 - INFO - utils -  Loading dataset cmrc2018_train.json320_l512_cHA.tRB.pkl 
+2022/05/06 02:40:15 - INFO - utils -  Loading dataset cmrc2018_dev.json320_l512_cHA.tRB.pkl 
+2022/05/06 02:40:22 - INFO - Main -  Length of all_trainable_params: 2
+2022/05/06 02:40:22 - INFO - Main -  ***** Running training *****
+2022/05/06 02:40:22 - INFO - Main -    Num orig examples = 10142
+2022/05/06 02:40:22 - INFO - Main -    Num split examples = 10631
+2022/05/06 02:40:22 - INFO - Main -    Forward batch size = 12
+2022/05/06 02:40:22 - INFO - Main -    Num backward steps = 3540
+2022/05/06 02:40:23 - INFO - Distillation -  Training steps per epoch: 885
+2022/05/06 02:40:23 - INFO - Distillation -  Checkpoints(step): [0]
+2022/05/06 02:40:23 - INFO - Distillation -  Epoch 1
+2022/05/06 02:40:23 - INFO - Distillation -  Length of current epoch in forward batch: 885
+/home/hs3228/TextBrewer/examples/cmrc2018_example/optimization.py:181: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  ../torch/csrc/utils/python_arg_parser.cpp:1050.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)
+2022/05/06 02:40:43 - INFO - Distillation -  Global step: 44, epoch step:44
+2022/05/06 02:41:04 - INFO - Distillation -  Global step: 88, epoch step:88
+2022/05/06 02:41:24 - INFO - Distillation -  Global step: 132, epoch step:132
+2022/05/06 02:41:45 - INFO - Distillation -  Global step: 176, epoch step:176
+2022/05/06 02:42:05 - INFO - Distillation -  Global step: 220, epoch step:220
+2022/05/06 02:42:25 - INFO - Distillation -  Global step: 264, epoch step:264
+2022/05/06 02:42:46 - INFO - Distillation -  Global step: 308, epoch step:308
+2022/05/06 02:43:06 - INFO - Distillation -  Global step: 352, epoch step:352
+2022/05/06 02:43:27 - INFO - Distillation -  Global step: 396, epoch step:396
+2022/05/06 02:43:47 - INFO - Distillation -  Global step: 440, epoch step:440
+2022/05/06 02:44:07 - INFO - Distillation -  Global step: 484, epoch step:484
+2022/05/06 02:44:28 - INFO - Distillation -  Global step: 528, epoch step:528
+2022/05/06 02:44:48 - INFO - Distillation -  Global step: 572, epoch step:572
+2022/05/06 02:45:09 - INFO - Distillation -  Global step: 616, epoch step:616
+2022/05/06 02:45:29 - INFO - Distillation -  Global step: 660, epoch step:660
+2022/05/06 02:45:49 - INFO - Distillation -  Global step: 704, epoch step:704
+2022/05/06 02:46:10 - INFO - Distillation -  Global step: 748, epoch step:748
+2022/05/06 02:46:30 - INFO - Distillation -  Global step: 792, epoch step:792
+2022/05/06 02:46:50 - INFO - Distillation -  Global step: 836, epoch step:836
+2022/05/06 02:47:10 - INFO - Distillation -  Global step: 880, epoch step:880
+2022/05/06 02:47:13 - INFO - Distillation -  Saving at global step 885, epoch step 885 epoch 1
+2022/05/06 02:47:13 - INFO - Distillation -  Running callback function...
+2022/05/06 02:47:13 - INFO - train_eval -  Predicting...
+2022/05/06 02:47:13 - INFO - train_eval -  ***** Running predictions *****
+2022/05/06 02:47:13 - INFO - train_eval -    Num orig examples = 3219
+2022/05/06 02:47:13 - INFO - train_eval -    Num split examples = 4664
+2022/05/06 02:47:13 - INFO - train_eval -    Batch size = 8
+2022/05/06 02:47:14 - INFO - train_eval -  Start evaluating
+2022/05/06 02:47:14 - INFO - train_eval -  Processing example: 0
+2022/05/06 02:47:25 - INFO - train_eval -  Processing example: 1000
+2022/05/06 02:47:37 - INFO - train_eval -  Processing example: 2000
+2022/05/06 02:47:48 - INFO - train_eval -  Processing example: 3000
+2022/05/06 02:48:00 - INFO - train_eval -  Processing example: 4000
+2022/05/06 02:48:07 - INFO - train_eval -  Write predictions...
+2022/05/06 02:48:07 - INFO - processing -  Writing predictions to: /home/hs3228/TextBrewer/output_model/cmrc/teacher/cmrc2018_base_lr3e4_teacher/predictions_885.json
+2022/05/06 02:48:22 - INFO - train_eval -  ***** Eval results 885 *****
+2022/05/06 02:48:22 - INFO - train_eval -  {"AVERAGE": "75.080", "F1": "84.549", "EM": "65.610", "TOTAL": 3219, "SKIP": 0}
+
+2022/05/06 02:48:22 - INFO - Distillation -  Epoch 1 finished
+2022/05/06 02:48:22 - INFO - Distillation -  Epoch 2
+2022/05/06 02:48:22 - INFO - Distillation -  Length of current epoch in forward batch: 885
+2022/05/06 02:48:40 - INFO - Distillation -  Global step: 924, epoch step:39
+2022/05/06 02:49:01 - INFO - Distillation -  Global step: 968, epoch step:83
+2022/05/06 02:49:21 - INFO - Distillation -  Global step: 1012, epoch step:127
+2022/05/06 02:49:41 - INFO - Distillation -  Global step: 1056, epoch step:171
+2022/05/06 02:50:02 - INFO - Distillation -  Global step: 1100, epoch step:215
+2022/05/06 02:50:22 - INFO - Distillation -  Global step: 1144, epoch step:259
+2022/05/06 02:50:42 - INFO - Distillation -  Global step: 1188, epoch step:303
+2022/05/06 02:51:03 - INFO - Distillation -  Global step: 1232, epoch step:347
+2022/05/06 02:51:23 - INFO - Distillation -  Global step: 1276, epoch step:391
+2022/05/06 02:51:43 - INFO - Distillation -  Global step: 1320, epoch step:435
+2022/05/06 02:52:04 - INFO - Distillation -  Global step: 1364, epoch step:479
+2022/05/06 02:52:24 - INFO - Distillation -  Global step: 1408, epoch step:523
+2022/05/06 02:52:44 - INFO - Distillation -  Global step: 1452, epoch step:567
+2022/05/06 02:53:04 - INFO - Distillation -  Global step: 1496, epoch step:611
+2022/05/06 02:53:25 - INFO - Distillation -  Global step: 1540, epoch step:655
+2022/05/06 02:53:45 - INFO - Distillation -  Global step: 1584, epoch step:699
+2022/05/06 02:54:05 - INFO - Distillation -  Global step: 1628, epoch step:743
+2022/05/06 02:54:25 - INFO - Distillation -  Global step: 1672, epoch step:787
+2022/05/06 02:54:46 - INFO - Distillation -  Global step: 1716, epoch step:831
+2022/05/06 02:55:06 - INFO - Distillation -  Global step: 1760, epoch step:875
+2022/05/06 02:55:11 - INFO - Distillation -  Saving at global step 1770, epoch step 885 epoch 2
+2022/05/06 02:55:11 - INFO - Distillation -  Running callback function...
+2022/05/06 02:55:11 - INFO - train_eval -  Predicting...
+2022/05/06 02:55:11 - INFO - train_eval -  ***** Running predictions *****
+2022/05/06 02:55:11 - INFO - train_eval -    Num orig examples = 3219
+2022/05/06 02:55:11 - INFO - train_eval -    Num split examples = 4664
+2022/05/06 02:55:11 - INFO - train_eval -    Batch size = 8
+2022/05/06 02:55:11 - INFO - train_eval -  Start evaluating
+2022/05/06 02:55:11 - INFO - train_eval -  Processing example: 0
+2022/05/06 02:55:23 - INFO - train_eval -  Processing example: 1000
+2022/05/06 02:55:35 - INFO - train_eval -  Processing example: 2000
+2022/05/06 02:55:46 - INFO - train_eval -  Processing example: 3000
+2022/05/06 02:55:58 - INFO - train_eval -  Processing example: 4000
+2022/05/06 02:56:05 - INFO - train_eval -  Write predictions...
+2022/05/06 02:56:05 - INFO - processing -  Writing predictions to: /home/hs3228/TextBrewer/output_model/cmrc/teacher/cmrc2018_base_lr3e4_teacher/predictions_1770.json
+2022/05/06 02:56:20 - INFO - train_eval -  ***** Eval results 1770 *****
+2022/05/06 02:56:20 - INFO - train_eval -  {"AVERAGE": "73.565", "F1": "83.600", "EM": "63.529", "TOTAL": 3219, "SKIP": 0}
+
+2022/05/06 02:56:20 - INFO - Distillation -  Epoch 2 finished
+2022/05/06 02:56:20 - INFO - Distillation -  Epoch 3
+2022/05/06 02:56:20 - INFO - Distillation -  Length of current epoch in forward batch: 885
+2022/05/06 02:56:36 - INFO - Distillation -  Global step: 1804, epoch step:34
+2022/05/06 02:56:56 - INFO - Distillation -  Global step: 1848, epoch step:78
+2022/05/06 02:57:16 - INFO - Distillation -  Global step: 1892, epoch step:122
+2022/05/06 02:57:37 - INFO - Distillation -  Global step: 1936, epoch step:166
+2022/05/06 02:57:57 - INFO - Distillation -  Global step: 1980, epoch step:210
+2022/05/06 02:58:17 - INFO - Distillation -  Global step: 2024, epoch step:254
+2022/05/06 02:58:38 - INFO - Distillation -  Global step: 2068, epoch step:298
+2022/05/06 02:58:58 - INFO - Distillation -  Global step: 2112, epoch step:342
+2022/05/06 02:59:18 - INFO - Distillation -  Global step: 2156, epoch step:386
+2022/05/06 02:59:39 - INFO - Distillation -  Global step: 2200, epoch step:430
+2022/05/06 02:59:59 - INFO - Distillation -  Global step: 2244, epoch step:474
+2022/05/06 03:00:19 - INFO - Distillation -  Global step: 2288, epoch step:518
+2022/05/06 03:00:40 - INFO - Distillation -  Global step: 2332, epoch step:562
+2022/05/06 03:01:00 - INFO - Distillation -  Global step: 2376, epoch step:606
+2022/05/06 03:01:20 - INFO - Distillation -  Global step: 2420, epoch step:650
+2022/05/06 03:01:41 - INFO - Distillation -  Global step: 2464, epoch step:694
+2022/05/06 03:02:01 - INFO - Distillation -  Global step: 2508, epoch step:738
+2022/05/06 03:02:21 - INFO - Distillation -  Global step: 2552, epoch step:782
+2022/05/06 03:02:42 - INFO - Distillation -  Global step: 2596, epoch step:826
+2022/05/06 03:03:02 - INFO - Distillation -  Global step: 2640, epoch step:870
+2022/05/06 03:03:09 - INFO - Distillation -  Saving at global step 2655, epoch step 885 epoch 3
+2022/05/06 03:03:10 - INFO - Distillation -  Running callback function...
+2022/05/06 03:03:10 - INFO - train_eval -  Predicting...
+2022/05/06 03:03:10 - INFO - train_eval -  ***** Running predictions *****
+2022/05/06 03:03:10 - INFO - train_eval -    Num orig examples = 3219
+2022/05/06 03:03:10 - INFO - train_eval -    Num split examples = 4664
+2022/05/06 03:03:10 - INFO - train_eval -    Batch size = 8
+2022/05/06 03:03:10 - INFO - train_eval -  Start evaluating
+2022/05/06 03:03:10 - INFO - train_eval -  Processing example: 0
+2022/05/06 03:03:22 - INFO - train_eval -  Processing example: 1000
+2022/05/06 03:03:33 - INFO - train_eval -  Processing example: 2000
+2022/05/06 03:03:45 - INFO - train_eval -  Processing example: 3000
+2022/05/06 03:03:57 - INFO - train_eval -  Processing example: 4000
+2022/05/06 03:04:04 - INFO - train_eval -  Write predictions...
+2022/05/06 03:04:04 - INFO - processing -  Writing predictions to: /home/hs3228/TextBrewer/output_model/cmrc/teacher/cmrc2018_base_lr3e4_teacher/predictions_2655.json
+2022/05/06 03:04:18 - INFO - train_eval -  ***** Eval results 2655 *****
+2022/05/06 03:04:18 - INFO - train_eval -  {"AVERAGE": "72.677", "F1": "82.851", "EM": "62.504", "TOTAL": 3219, "SKIP": 0}
+
+2022/05/06 03:04:19 - INFO - Distillation -  Epoch 3 finished
+2022/05/06 03:04:19 - INFO - Distillation -  Epoch 4
+2022/05/06 03:04:19 - INFO - Distillation -  Length of current epoch in forward batch: 885
+2022/05/06 03:04:32 - INFO - Distillation -  Global step: 2684, epoch step:29
+2022/05/06 03:04:52 - INFO - Distillation -  Global step: 2728, epoch step:73
+2022/05/06 03:05:13 - INFO - Distillation -  Global step: 2772, epoch step:117
+2022/05/06 03:05:33 - INFO - Distillation -  Global step: 2816, epoch step:161
+2022/05/06 03:05:53 - INFO - Distillation -  Global step: 2860, epoch step:205
+2022/05/06 03:06:13 - INFO - Distillation -  Global step: 2904, epoch step:249
+2022/05/06 03:06:34 - INFO - Distillation -  Global step: 2948, epoch step:293
+2022/05/06 03:06:54 - INFO - Distillation -  Global step: 2992, epoch step:337
+2022/05/06 03:07:14 - INFO - Distillation -  Global step: 3036, epoch step:381
+2022/05/06 03:07:35 - INFO - Distillation -  Global step: 3080, epoch step:425
+2022/05/06 03:07:55 - INFO - Distillation -  Global step: 3124, epoch step:469
+2022/05/06 03:08:15 - INFO - Distillation -  Global step: 3168, epoch step:513
+2022/05/06 03:08:35 - INFO - Distillation -  Global step: 3212, epoch step:557
+2022/05/06 03:08:56 - INFO - Distillation -  Global step: 3256, epoch step:601
+2022/05/06 03:09:16 - INFO - Distillation -  Global step: 3300, epoch step:645
+2022/05/06 03:09:36 - INFO - Distillation -  Global step: 3344, epoch step:689
+2022/05/06 03:09:57 - INFO - Distillation -  Global step: 3388, epoch step:733
+2022/05/06 03:10:17 - INFO - Distillation -  Global step: 3432, epoch step:777
+2022/05/06 03:10:37 - INFO - Distillation -  Global step: 3476, epoch step:821
+2022/05/06 03:10:58 - INFO - Distillation -  Global step: 3520, epoch step:865
+2022/05/06 03:11:07 - INFO - Distillation -  Saving at global step 3540, epoch step 885 epoch 4
+2022/05/06 03:11:08 - INFO - Distillation -  Running callback function...
+2022/05/06 03:11:08 - INFO - train_eval -  Predicting...
+2022/05/06 03:11:08 - INFO - train_eval -  ***** Running predictions *****
+2022/05/06 03:11:08 - INFO - train_eval -    Num orig examples = 3219
+2022/05/06 03:11:08 - INFO - train_eval -    Num split examples = 4664
+2022/05/06 03:11:08 - INFO - train_eval -    Batch size = 8
+2022/05/06 03:11:08 - INFO - train_eval -  Start evaluating
+2022/05/06 03:11:08 - INFO - train_eval -  Processing example: 0
+2022/05/06 03:11:19 - INFO - train_eval -  Processing example: 1000
+2022/05/06 03:11:31 - INFO - train_eval -  Processing example: 2000
+2022/05/06 03:11:43 - INFO - train_eval -  Processing example: 3000
+2022/05/06 03:11:54 - INFO - train_eval -  Processing example: 4000
+2022/05/06 03:12:02 - INFO - train_eval -  Write predictions...
+2022/05/06 03:12:02 - INFO - processing -  Writing predictions to: /home/hs3228/TextBrewer/output_model/cmrc/teacher/cmrc2018_base_lr3e4_teacher/predictions_3540.json
+2022/05/06 03:12:17 - INFO - train_eval -  ***** Eval results 3540 *****
+2022/05/06 03:12:17 - INFO - train_eval -  {"AVERAGE": "73.101", "F1": "82.827", "EM": "63.374", "TOTAL": 3219, "SKIP": 0}
+
+2022/05/06 03:12:17 - INFO - Distillation -  Epoch 4 finished

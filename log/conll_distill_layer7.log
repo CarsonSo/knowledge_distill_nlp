@@ -1,0 +1,1050 @@
+nohup: ignoring input
+05/05/2022 19:09:15 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+05/05/2022 19:09:15 - INFO - transformers.configuration_utils -   loading configuration file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/config.json
+05/05/2022 19:09:15 - INFO - transformers.configuration_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 9,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 28996
+}
+
+05/05/2022 19:09:15 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:09:15 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:09:15 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:09:15 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:09:15 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:09:15 - INFO - transformers.modeling_utils -   loading weights file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/pytorch_model.bin
+05/05/2022 19:09:17 - INFO - transformers.configuration_utils -   loading configuration file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/config.json
+05/05/2022 19:09:17 - INFO - transformers.configuration_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 9,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 28996
+}
+
+05/05/2022 19:09:17 - INFO - transformers.modeling_utils -   loading weights file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/pytorch_model.bin
+05/05/2022 19:09:19 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForTokenClassification: ['bert.encoder.layer.7.attention.self.query.weight', 'bert.encoder.layer.7.attention.self.query.bias', 'bert.encoder.layer.7.attention.self.key.weight', 'bert.encoder.layer.7.attention.self.key.bias', 'bert.encoder.layer.7.attention.self.value.weight', 'bert.encoder.layer.7.attention.self.value.bias', 'bert.encoder.layer.7.attention.output.dense.weight', 'bert.encoder.layer.7.attention.output.dense.bias', 'bert.encoder.layer.7.attention.output.LayerNorm.weight', 'bert.encoder.layer.7.attention.output.LayerNorm.bias', 'bert.encoder.layer.7.intermediate.dense.weight', 'bert.encoder.layer.7.intermediate.dense.bias', 'bert.encoder.layer.7.output.dense.weight', 'bert.encoder.layer.7.output.dense.bias', 'bert.encoder.layer.7.output.LayerNorm.weight', 'bert.encoder.layer.7.output.LayerNorm.bias', 'bert.encoder.layer.8.attention.self.query.weight', 'bert.encoder.layer.8.attention.self.query.bias', 'bert.encoder.layer.8.attention.self.key.weight', 'bert.encoder.layer.8.attention.self.key.bias', 'bert.encoder.layer.8.attention.self.value.weight', 'bert.encoder.layer.8.attention.self.value.bias', 'bert.encoder.layer.8.attention.output.dense.weight', 'bert.encoder.layer.8.attention.output.dense.bias', 'bert.encoder.layer.8.attention.output.LayerNorm.weight', 'bert.encoder.layer.8.attention.output.LayerNorm.bias', 'bert.encoder.layer.8.intermediate.dense.weight', 'bert.encoder.layer.8.intermediate.dense.bias', 'bert.encoder.layer.8.output.dense.weight', 'bert.encoder.layer.8.output.dense.bias', 'bert.encoder.layer.8.output.LayerNorm.weight', 'bert.encoder.layer.8.output.LayerNorm.bias', 'bert.encoder.layer.9.attention.self.query.weight', 'bert.encoder.layer.9.attention.self.query.bias', 'bert.encoder.layer.9.attention.self.key.weight', 'bert.encoder.layer.9.attention.self.key.bias', 'bert.encoder.layer.9.attention.self.value.weight', 'bert.encoder.layer.9.attention.self.value.bias', 'bert.encoder.layer.9.attention.output.dense.weight', 'bert.encoder.layer.9.attention.output.dense.bias', 'bert.encoder.layer.9.attention.output.LayerNorm.weight', 'bert.encoder.layer.9.attention.output.LayerNorm.bias', 'bert.encoder.layer.9.intermediate.dense.weight', 'bert.encoder.layer.9.intermediate.dense.bias', 'bert.encoder.layer.9.output.dense.weight', 'bert.encoder.layer.9.output.dense.bias', 'bert.encoder.layer.9.output.LayerNorm.weight', 'bert.encoder.layer.9.output.LayerNorm.bias', 'bert.encoder.layer.10.attention.self.query.weight', 'bert.encoder.layer.10.attention.self.query.bias', 'bert.encoder.layer.10.attention.self.key.weight', 'bert.encoder.layer.10.attention.self.key.bias', 'bert.encoder.layer.10.attention.self.value.weight', 'bert.encoder.layer.10.attention.self.value.bias', 'bert.encoder.layer.10.attention.output.dense.weight', 'bert.encoder.layer.10.attention.output.dense.bias', 'bert.encoder.layer.10.attention.output.LayerNorm.weight', 'bert.encoder.layer.10.attention.output.LayerNorm.bias', 'bert.encoder.layer.10.intermediate.dense.weight', 'bert.encoder.layer.10.intermediate.dense.bias', 'bert.encoder.layer.10.output.dense.weight', 'bert.encoder.layer.10.output.dense.bias', 'bert.encoder.layer.10.output.LayerNorm.weight', 'bert.encoder.layer.10.output.LayerNorm.bias', 'bert.encoder.layer.11.attention.self.query.weight', 'bert.encoder.layer.11.attention.self.query.bias', 'bert.encoder.layer.11.attention.self.key.weight', 'bert.encoder.layer.11.attention.self.key.bias', 'bert.encoder.layer.11.attention.self.value.weight', 'bert.encoder.layer.11.attention.self.value.bias', 'bert.encoder.layer.11.attention.output.dense.weight', 'bert.encoder.layer.11.attention.output.dense.bias', 'bert.encoder.layer.11.attention.output.LayerNorm.weight', 'bert.encoder.layer.11.attention.output.LayerNorm.bias', 'bert.encoder.layer.11.intermediate.dense.weight', 'bert.encoder.layer.11.intermediate.dense.bias', 'bert.encoder.layer.11.output.dense.weight', 'bert.encoder.layer.11.output.dense.bias', 'bert.encoder.layer.11.output.LayerNorm.weight', 'bert.encoder.layer.11.output.LayerNorm.bias']
+05/05/2022 19:09:23 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, cache_dir='', config_name='', data_dir='/home/hs3228/TextBrewer/data/conll', device=device(type='cuda'), do_distill=True, do_eval=True, do_lower_case=False, do_predict=True, do_train=True, eval_all_checkpoints=False, evaluate_during_training=False, fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, labels='', learning_rate=0.0001, local_rank=-1, logging_steps=50, max_grad_norm=1.0, max_seq_length=128, max_steps=-1, model_name_or_path='/home/hs3228/TextBrewer/output_model/conll_distill/teacher', model_name_or_path_student=None, model_type='bert', n_gpu=1, no_cuda=False, num_hidden_layers=7, num_train_epochs=20.0, output_dir='/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7', overwrite_cache=False, overwrite_output_dir=True, per_gpu_eval_batch_size=8, per_gpu_train_batch_size=32, save_steps=750, seed=42, server_ip='', server_port='', tokenizer_name='', warmup_steps=0.1, weight_decay=0.0)
+05/05/2022 19:09:23 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_train_teacher_128
+05/05/2022 19:09:24 - INFO - __main__ -   ***** Running training *****
+05/05/2022 19:09:24 - INFO - __main__ -     Num examples = 14041
+05/05/2022 19:09:24 - INFO - __main__ -     Num Epochs = 20
+05/05/2022 19:09:24 - INFO - __main__ -     Instantaneous batch size per GPU = 32
+05/05/2022 19:09:24 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 32
+05/05/2022 19:09:24 - INFO - __main__ -     Gradient Accumulation steps = 1
+05/05/2022 19:09:24 - INFO - __main__ -     Total optimization steps = 8780
+05/05/2022 19:09:24 - INFO - Distillation -   Training steps per epoch: 439
+05/05/2022 19:09:24 - INFO - Distillation -   Checkpoints(step): [0]
+05/05/2022 19:09:24 - INFO - Distillation -   Epoch 1
+05/05/2022 19:09:24 - INFO - Distillation -   Length of current epoch in forward batch: 439
+/home/hs3228/miniconda3/envs/prac/lib/python3.6/site-packages/transformers/optimization.py:146: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  ../torch/csrc/utils/python_arg_parser.cpp:1050.)
+  exp_avg.mul_(beta1).add_(1.0 - beta1, grad)
+05/05/2022 19:09:29 - INFO - Distillation -   Global step: 21, epoch step:21
+05/05/2022 19:09:33 - INFO - Distillation -   Global step: 42, epoch step:42
+05/05/2022 19:09:38 - INFO - Distillation -   Global step: 63, epoch step:63
+05/05/2022 19:09:43 - INFO - Distillation -   Global step: 84, epoch step:84
+05/05/2022 19:09:47 - INFO - Distillation -   Global step: 105, epoch step:105
+05/05/2022 19:09:52 - INFO - Distillation -   Global step: 126, epoch step:126
+05/05/2022 19:09:56 - INFO - Distillation -   Global step: 147, epoch step:147
+05/05/2022 19:10:01 - INFO - Distillation -   Global step: 168, epoch step:168
+05/05/2022 19:10:06 - INFO - Distillation -   Global step: 189, epoch step:189
+05/05/2022 19:10:10 - INFO - Distillation -   Global step: 210, epoch step:210
+05/05/2022 19:10:15 - INFO - Distillation -   Global step: 231, epoch step:231
+05/05/2022 19:10:19 - INFO - Distillation -   Global step: 252, epoch step:252
+05/05/2022 19:10:24 - INFO - Distillation -   Global step: 273, epoch step:273
+05/05/2022 19:10:29 - INFO - Distillation -   Global step: 294, epoch step:294
+05/05/2022 19:10:33 - INFO - Distillation -   Global step: 315, epoch step:315
+05/05/2022 19:10:38 - INFO - Distillation -   Global step: 336, epoch step:336
+05/05/2022 19:10:42 - INFO - Distillation -   Global step: 357, epoch step:357
+05/05/2022 19:10:47 - INFO - Distillation -   Global step: 378, epoch step:378
+05/05/2022 19:10:52 - INFO - Distillation -   Global step: 399, epoch step:399
+05/05/2022 19:10:56 - INFO - Distillation -   Global step: 420, epoch step:420
+05/05/2022 19:11:00 - INFO - Distillation -   Saving at global step 439, epoch step 439 epoch 1
+05/05/2022 19:11:01 - INFO - Distillation -   Running callback function...
+05/05/2022 19:11:01 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:11:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:11:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:11:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:11:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:11:01 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:11:01 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:11:01 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:11:01 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.47it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.46it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.38it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.25it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 75.07it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.65it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.26it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.04it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.73it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.48it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.44it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 73.25it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.88it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.57it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.26it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.72it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.26it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.87it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.50it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.24it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 69.90it/s]Evaluating:  41%|████      | 175/432 [00:02<00:03, 69.53it/s]Evaluating:  42%|████▏     | 182/432 [00:02<00:03, 69.10it/s]Evaluating:  44%|████▍     | 189/432 [00:02<00:03, 68.75it/s]Evaluating:  45%|████▌     | 196/432 [00:02<00:03, 68.59it/s]Evaluating:  47%|████▋     | 203/432 [00:02<00:03, 68.24it/s]Evaluating:  49%|████▊     | 210/432 [00:02<00:03, 67.60it/s]Evaluating:  50%|█████     | 217/432 [00:03<00:03, 67.12it/s]Evaluating:  52%|█████▏    | 224/432 [00:03<00:03, 66.68it/s]Evaluating:  53%|█████▎    | 231/432 [00:03<00:03, 66.27it/s]Evaluating:  55%|█████▌    | 238/432 [00:03<00:02, 65.97it/s]Evaluating:  57%|█████▋    | 245/432 [00:03<00:02, 65.62it/s]Evaluating:  58%|█████▊    | 252/432 [00:03<00:02, 65.36it/s]Evaluating:  60%|█████▉    | 259/432 [00:03<00:02, 65.16it/s]Evaluating:  62%|██████▏   | 266/432 [00:03<00:02, 64.89it/s]Evaluating:  63%|██████▎   | 273/432 [00:03<00:02, 64.66it/s]Evaluating:  65%|██████▍   | 280/432 [00:04<00:02, 64.37it/s]Evaluating:  66%|██████▋   | 287/432 [00:04<00:02, 64.30it/s]Evaluating:  68%|██████▊   | 294/432 [00:04<00:02, 63.97it/s]Evaluating:  70%|██████▉   | 301/432 [00:04<00:02, 63.58it/s]Evaluating:  71%|███████▏  | 308/432 [00:04<00:01, 63.30it/s]Evaluating:  73%|███████▎  | 315/432 [00:04<00:01, 62.97it/s]Evaluating:  75%|███████▍  | 322/432 [00:04<00:01, 62.65it/s]Evaluating:  76%|███████▌  | 329/432 [00:04<00:01, 62.38it/s]Evaluating:  78%|███████▊  | 336/432 [00:04<00:01, 62.12it/s]Evaluating:  79%|███████▉  | 343/432 [00:05<00:01, 61.27it/s]Evaluating:  81%|████████  | 350/432 [00:05<00:01, 61.27it/s]Evaluating:  83%|████████▎ | 357/432 [00:05<00:01, 61.24it/s]Evaluating:  84%|████████▍ | 364/432 [00:05<00:01, 60.87it/s]Evaluating:  86%|████████▌ | 371/432 [00:05<00:01, 60.83it/s]Evaluating:  88%|████████▊ | 378/432 [00:05<00:00, 60.81it/s]Evaluating:  89%|████████▉ | 385/432 [00:05<00:00, 60.75it/s]Evaluating:  91%|█████████ | 392/432 [00:05<00:00, 60.62it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 60.31it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 59.99it/s]Evaluating:  95%|█████████▌| 412/432 [00:06<00:00, 59.68it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 59.35it/s]Evaluating:  98%|█████████▊| 424/432 [00:06<00:00, 59.06it/s]Evaluating: 100%|█████████▉| 430/432 [00:06<00:00, 58.83it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.31it/s]
+05/05/2022 19:11:08 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:11:08 - INFO - __main__ -     f1 = 0.8938980364532888
+05/05/2022 19:11:08 - INFO - __main__ -     loss = 0.17425172369603262
+05/05/2022 19:11:08 - INFO - __main__ -     precision = 0.888499912480308
+05/05/2022 19:11:08 - INFO - __main__ -     recall = 0.8993621545003544
+05/05/2022 19:11:08 - INFO - Distillation -   Epoch 1 finished
+05/05/2022 19:11:08 - INFO - Distillation -   Epoch 2
+05/05/2022 19:11:08 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:11:09 - INFO - Distillation -   Global step: 441, epoch step:2
+05/05/2022 19:11:13 - INFO - Distillation -   Global step: 462, epoch step:23
+05/05/2022 19:11:18 - INFO - Distillation -   Global step: 483, epoch step:44
+05/05/2022 19:11:23 - INFO - Distillation -   Global step: 504, epoch step:65
+05/05/2022 19:11:27 - INFO - Distillation -   Global step: 525, epoch step:86
+05/05/2022 19:11:32 - INFO - Distillation -   Global step: 546, epoch step:107
+05/05/2022 19:11:37 - INFO - Distillation -   Global step: 567, epoch step:128
+05/05/2022 19:11:41 - INFO - Distillation -   Global step: 588, epoch step:149
+05/05/2022 19:11:46 - INFO - Distillation -   Global step: 609, epoch step:170
+05/05/2022 19:11:50 - INFO - Distillation -   Global step: 630, epoch step:191
+05/05/2022 19:11:55 - INFO - Distillation -   Global step: 651, epoch step:212
+05/05/2022 19:12:00 - INFO - Distillation -   Global step: 672, epoch step:233
+05/05/2022 19:12:04 - INFO - Distillation -   Global step: 693, epoch step:254
+05/05/2022 19:12:09 - INFO - Distillation -   Global step: 714, epoch step:275
+05/05/2022 19:12:14 - INFO - Distillation -   Global step: 735, epoch step:296
+05/05/2022 19:12:18 - INFO - Distillation -   Global step: 756, epoch step:317
+05/05/2022 19:12:23 - INFO - Distillation -   Global step: 777, epoch step:338
+05/05/2022 19:12:28 - INFO - Distillation -   Global step: 798, epoch step:359
+05/05/2022 19:12:32 - INFO - Distillation -   Global step: 819, epoch step:380
+05/05/2022 19:12:37 - INFO - Distillation -   Global step: 840, epoch step:401
+05/05/2022 19:12:41 - INFO - Distillation -   Global step: 861, epoch step:422
+05/05/2022 19:12:45 - INFO - Distillation -   Saving at global step 878, epoch step 439 epoch 2
+05/05/2022 19:12:46 - INFO - Distillation -   Running callback function...
+05/05/2022 19:12:46 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:12:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:12:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:12:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:12:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:12:46 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:12:46 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:12:46 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:12:46 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.16it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 76.35it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.92it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.48it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 75.09it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.51it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.08it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.74it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.57it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.41it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.12it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.69it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.05it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.83it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.65it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.39it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.27it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.06it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.84it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.54it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.06it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.54it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.36it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 69.12it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 69.00it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 68.76it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 68.02it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 67.46it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 67.01it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:02, 66.74it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 66.26it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.96it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.67it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 65.19it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.87it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.52it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.24it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.95it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.74it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.42it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 63.01it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.90it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.54it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.30it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.34it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 62.30it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 62.21it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.96it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.47it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 61.08it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.81it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.50it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.28it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 60.00it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 59.54it/s]Evaluating:  96%|█████████▌| 413/432 [00:06<00:00, 59.24it/s]Evaluating:  97%|█████████▋| 419/432 [00:06<00:00, 58.96it/s]Evaluating:  98%|█████████▊| 425/432 [00:06<00:00, 58.56it/s]Evaluating: 100%|█████████▉| 431/432 [00:06<00:00, 58.23it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.33it/s]
+05/05/2022 19:12:53 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:12:53 - INFO - __main__ -     f1 = 0.890784382694337
+05/05/2022 19:12:53 - INFO - __main__ -     loss = 0.26711209716203427
+05/05/2022 19:12:53 - INFO - __main__ -     precision = 0.8842527932960894
+05/05/2022 19:12:53 - INFO - __main__ -     recall = 0.8974131821403261
+05/05/2022 19:12:53 - INFO - Distillation -   Epoch 2 finished
+05/05/2022 19:12:53 - INFO - Distillation -   Epoch 3
+05/05/2022 19:12:53 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:12:54 - INFO - Distillation -   Global step: 882, epoch step:4
+05/05/2022 19:12:59 - INFO - Distillation -   Global step: 903, epoch step:25
+05/05/2022 19:13:03 - INFO - Distillation -   Global step: 924, epoch step:46
+05/05/2022 19:13:08 - INFO - Distillation -   Global step: 945, epoch step:67
+05/05/2022 19:13:13 - INFO - Distillation -   Global step: 966, epoch step:88
+05/05/2022 19:13:17 - INFO - Distillation -   Global step: 987, epoch step:109
+05/05/2022 19:13:22 - INFO - Distillation -   Global step: 1008, epoch step:130
+05/05/2022 19:13:26 - INFO - Distillation -   Global step: 1029, epoch step:151
+05/05/2022 19:13:31 - INFO - Distillation -   Global step: 1050, epoch step:172
+05/05/2022 19:13:36 - INFO - Distillation -   Global step: 1071, epoch step:193
+05/05/2022 19:13:40 - INFO - Distillation -   Global step: 1092, epoch step:214
+05/05/2022 19:13:45 - INFO - Distillation -   Global step: 1113, epoch step:235
+05/05/2022 19:13:50 - INFO - Distillation -   Global step: 1134, epoch step:256
+05/05/2022 19:13:54 - INFO - Distillation -   Global step: 1155, epoch step:277
+05/05/2022 19:13:59 - INFO - Distillation -   Global step: 1176, epoch step:298
+05/05/2022 19:14:04 - INFO - Distillation -   Global step: 1197, epoch step:319
+05/05/2022 19:14:08 - INFO - Distillation -   Global step: 1218, epoch step:340
+05/05/2022 19:14:13 - INFO - Distillation -   Global step: 1239, epoch step:361
+05/05/2022 19:14:18 - INFO - Distillation -   Global step: 1260, epoch step:382
+05/05/2022 19:14:22 - INFO - Distillation -   Global step: 1281, epoch step:403
+05/05/2022 19:14:27 - INFO - Distillation -   Global step: 1302, epoch step:424
+05/05/2022 19:14:30 - INFO - Distillation -   Saving at global step 1317, epoch step 439 epoch 3
+05/05/2022 19:14:31 - INFO - Distillation -   Running callback function...
+05/05/2022 19:14:31 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:14:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:14:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:14:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:14:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:14:31 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:14:31 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:14:31 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:14:31 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.66it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.80it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.29it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.05it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.72it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.51it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.29it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.10it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.63it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.12it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.84it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.69it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.32it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.97it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.88it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.67it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.44it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.98it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.99it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 71.00it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.64it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.87it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.08it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.71it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.06it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.46it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 66.85it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.56it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.21it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 65.74it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.45it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.25it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 64.77it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 64.32it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.03it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 63.75it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 63.62it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.39it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.11it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 62.78it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.34it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.23it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 61.90it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 61.53it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 61.38it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.12it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.14it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 60.88it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 60.53it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.32it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.19it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.04it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 59.78it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 59.52it/s]Evaluating:  94%|█████████▍| 405/432 [00:06<00:00, 59.28it/s]Evaluating:  95%|█████████▌| 411/432 [00:06<00:00, 58.93it/s]Evaluating:  97%|█████████▋| 417/432 [00:06<00:00, 58.66it/s]Evaluating:  98%|█████████▊| 423/432 [00:06<00:00, 58.59it/s]Evaluating:  99%|█████████▉| 429/432 [00:06<00:00, 58.44it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 65.89it/s]
+05/05/2022 19:14:38 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:14:38 - INFO - __main__ -     f1 = 0.8903893370747106
+05/05/2022 19:14:38 - INFO - __main__ -     loss = 0.2698890733984361
+05/05/2022 19:14:38 - INFO - __main__ -     precision = 0.8814236111111111
+05/05/2022 19:14:38 - INFO - __main__ -     recall = 0.8995393338058115
+05/05/2022 19:14:38 - INFO - Distillation -   Epoch 3 finished
+05/05/2022 19:14:38 - INFO - Distillation -   Epoch 4
+05/05/2022 19:14:38 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:14:39 - INFO - Distillation -   Global step: 1323, epoch step:6
+05/05/2022 19:14:44 - INFO - Distillation -   Global step: 1344, epoch step:27
+05/05/2022 19:14:49 - INFO - Distillation -   Global step: 1365, epoch step:48
+05/05/2022 19:14:53 - INFO - Distillation -   Global step: 1386, epoch step:69
+05/05/2022 19:14:58 - INFO - Distillation -   Global step: 1407, epoch step:90
+05/05/2022 19:15:03 - INFO - Distillation -   Global step: 1428, epoch step:111
+05/05/2022 19:15:07 - INFO - Distillation -   Global step: 1449, epoch step:132
+05/05/2022 19:15:12 - INFO - Distillation -   Global step: 1470, epoch step:153
+05/05/2022 19:15:17 - INFO - Distillation -   Global step: 1491, epoch step:174
+05/05/2022 19:15:21 - INFO - Distillation -   Global step: 1512, epoch step:195
+05/05/2022 19:15:26 - INFO - Distillation -   Global step: 1533, epoch step:216
+05/05/2022 19:15:31 - INFO - Distillation -   Global step: 1554, epoch step:237
+05/05/2022 19:15:35 - INFO - Distillation -   Global step: 1575, epoch step:258
+05/05/2022 19:15:40 - INFO - Distillation -   Global step: 1596, epoch step:279
+05/05/2022 19:15:44 - INFO - Distillation -   Global step: 1617, epoch step:300
+05/05/2022 19:15:49 - INFO - Distillation -   Global step: 1638, epoch step:321
+05/05/2022 19:15:54 - INFO - Distillation -   Global step: 1659, epoch step:342
+05/05/2022 19:15:58 - INFO - Distillation -   Global step: 1680, epoch step:363
+05/05/2022 19:16:03 - INFO - Distillation -   Global step: 1701, epoch step:384
+05/05/2022 19:16:08 - INFO - Distillation -   Global step: 1722, epoch step:405
+05/05/2022 19:16:12 - INFO - Distillation -   Global step: 1743, epoch step:426
+05/05/2022 19:16:15 - INFO - Distillation -   Saving at global step 1756, epoch step 439 epoch 4
+05/05/2022 19:16:16 - INFO - Distillation -   Running callback function...
+05/05/2022 19:16:16 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:16:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:16:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:16:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:16:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:16:16 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:16:16 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:16:16 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:16:16 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.00it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.89it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.62it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.44it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.75it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.41it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.06it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.92it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.72it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.49it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.90it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.37it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 71.97it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.59it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.56it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.40it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.16it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.97it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.83it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.39it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.11it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.52it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.14it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.88it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.52it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.90it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.40it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 67.07it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.65it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 66.24it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.80it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.49it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.12it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 64.90it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.57it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.37it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.13it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.94it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.80it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.44it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 63.09it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.77it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.52it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.25it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.04it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.71it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.58it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.41it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.07it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.87it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.75it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.64it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.54it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 60.31it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 60.00it/s]Evaluating:  96%|█████████▌| 414/432 [00:06<00:00, 59.62it/s]Evaluating:  97%|█████████▋| 420/432 [00:06<00:00, 59.42it/s]Evaluating:  99%|█████████▊| 426/432 [00:06<00:00, 59.07it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.23it/s]
+05/05/2022 19:16:23 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:16:23 - INFO - __main__ -     f1 = 0.8995425756509501
+05/05/2022 19:16:23 - INFO - __main__ -     loss = 0.21510253005714658
+05/05/2022 19:16:23 - INFO - __main__ -     precision = 0.893256464011181
+05/05/2022 19:16:23 - INFO - __main__ -     recall = 0.9059177888022679
+05/05/2022 19:16:23 - INFO - Distillation -   Epoch 4 finished
+05/05/2022 19:16:23 - INFO - Distillation -   Epoch 5
+05/05/2022 19:16:23 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:16:25 - INFO - Distillation -   Global step: 1764, epoch step:8
+05/05/2022 19:16:30 - INFO - Distillation -   Global step: 1785, epoch step:29
+05/05/2022 19:16:34 - INFO - Distillation -   Global step: 1806, epoch step:50
+05/05/2022 19:16:39 - INFO - Distillation -   Global step: 1827, epoch step:71
+05/05/2022 19:16:43 - INFO - Distillation -   Global step: 1848, epoch step:92
+05/05/2022 19:16:48 - INFO - Distillation -   Global step: 1869, epoch step:113
+05/05/2022 19:16:53 - INFO - Distillation -   Global step: 1890, epoch step:134
+05/05/2022 19:16:57 - INFO - Distillation -   Global step: 1911, epoch step:155
+05/05/2022 19:17:02 - INFO - Distillation -   Global step: 1932, epoch step:176
+05/05/2022 19:17:07 - INFO - Distillation -   Global step: 1953, epoch step:197
+05/05/2022 19:17:11 - INFO - Distillation -   Global step: 1974, epoch step:218
+05/05/2022 19:17:16 - INFO - Distillation -   Global step: 1995, epoch step:239
+05/05/2022 19:17:21 - INFO - Distillation -   Global step: 2016, epoch step:260
+05/05/2022 19:17:25 - INFO - Distillation -   Global step: 2037, epoch step:281
+05/05/2022 19:17:30 - INFO - Distillation -   Global step: 2058, epoch step:302
+05/05/2022 19:17:34 - INFO - Distillation -   Global step: 2079, epoch step:323
+05/05/2022 19:17:39 - INFO - Distillation -   Global step: 2100, epoch step:344
+05/05/2022 19:17:44 - INFO - Distillation -   Global step: 2121, epoch step:365
+05/05/2022 19:17:48 - INFO - Distillation -   Global step: 2142, epoch step:386
+05/05/2022 19:17:53 - INFO - Distillation -   Global step: 2163, epoch step:407
+05/05/2022 19:17:58 - INFO - Distillation -   Global step: 2184, epoch step:428
+05/05/2022 19:18:00 - INFO - Distillation -   Saving at global step 2195, epoch step 439 epoch 5
+05/05/2022 19:18:00 - INFO - Distillation -   Running callback function...
+05/05/2022 19:18:00 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:18:00 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:18:00 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:18:00 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:18:00 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:18:00 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:18:01 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:18:01 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:18:01 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.63it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.16it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 74.92it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 74.99it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.83it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.47it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.96it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.02it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.99it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.72it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.53it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 73.11it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.58it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.27it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.20it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.79it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.57it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.38it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 71.20it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.76it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.19it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.80it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.51it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 69.04it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.37it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.89it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.36it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.94it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.57it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 66.26it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.87it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.59it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.29it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 64.93it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.58it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.27it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 63.98it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.82it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.57it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.25it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.95it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.62it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.36it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.10it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.01it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.83it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.67it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.45it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.16it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.93it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.66it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.41it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.19it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 60.16it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 59.96it/s]Evaluating:  96%|█████████▌| 413/432 [00:06<00:00, 59.73it/s]Evaluating:  97%|█████████▋| 419/432 [00:06<00:00, 59.46it/s]Evaluating:  98%|█████████▊| 425/432 [00:06<00:00, 59.20it/s]Evaluating: 100%|█████████▉| 431/432 [00:06<00:00, 58.93it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.30it/s]
+05/05/2022 19:18:08 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:18:08 - INFO - __main__ -     f1 = 0.8972258916776751
+05/05/2022 19:18:08 - INFO - __main__ -     loss = 0.23948481322631104
+05/05/2022 19:18:08 - INFO - __main__ -     precision = 0.8919628786552267
+05/05/2022 19:18:08 - INFO - __main__ -     recall = 0.9025513819985825
+05/05/2022 19:18:08 - INFO - Distillation -   Epoch 5 finished
+05/05/2022 19:18:08 - INFO - Distillation -   Epoch 6
+05/05/2022 19:18:08 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:18:10 - INFO - Distillation -   Global step: 2205, epoch step:10
+05/05/2022 19:18:15 - INFO - Distillation -   Global step: 2226, epoch step:31
+05/05/2022 19:18:20 - INFO - Distillation -   Global step: 2247, epoch step:52
+05/05/2022 19:18:24 - INFO - Distillation -   Global step: 2268, epoch step:73
+05/05/2022 19:18:29 - INFO - Distillation -   Global step: 2289, epoch step:94
+05/05/2022 19:18:33 - INFO - Distillation -   Global step: 2310, epoch step:115
+05/05/2022 19:18:38 - INFO - Distillation -   Global step: 2331, epoch step:136
+05/05/2022 19:18:43 - INFO - Distillation -   Global step: 2352, epoch step:157
+05/05/2022 19:18:47 - INFO - Distillation -   Global step: 2373, epoch step:178
+05/05/2022 19:18:52 - INFO - Distillation -   Global step: 2394, epoch step:199
+05/05/2022 19:18:57 - INFO - Distillation -   Global step: 2415, epoch step:220
+05/05/2022 19:19:01 - INFO - Distillation -   Global step: 2436, epoch step:241
+05/05/2022 19:19:06 - INFO - Distillation -   Global step: 2457, epoch step:262
+05/05/2022 19:19:11 - INFO - Distillation -   Global step: 2478, epoch step:283
+05/05/2022 19:19:15 - INFO - Distillation -   Global step: 2499, epoch step:304
+05/05/2022 19:19:20 - INFO - Distillation -   Global step: 2520, epoch step:325
+05/05/2022 19:19:24 - INFO - Distillation -   Global step: 2541, epoch step:346
+05/05/2022 19:19:29 - INFO - Distillation -   Global step: 2562, epoch step:367
+05/05/2022 19:19:34 - INFO - Distillation -   Global step: 2583, epoch step:388
+05/05/2022 19:19:38 - INFO - Distillation -   Global step: 2604, epoch step:409
+05/05/2022 19:19:43 - INFO - Distillation -   Global step: 2625, epoch step:430
+05/05/2022 19:19:45 - INFO - Distillation -   Saving at global step 2634, epoch step 439 epoch 6
+05/05/2022 19:19:45 - INFO - Distillation -   Running callback function...
+05/05/2022 19:19:45 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:19:45 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:19:45 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:19:45 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:19:45 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:19:45 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:19:46 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:19:46 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:19:46 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.05it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.86it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.57it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.25it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.73it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.38it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.04it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.93it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.73it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.49it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.25it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.79it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.65it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.31it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.12it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.87it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.71it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.42it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 71.01it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.57it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.14it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.77it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.23it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.69it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.18it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.84it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.42it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 67.25it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.96it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:02, 66.78it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 66.33it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 66.00it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.63it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 65.34it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.95it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.71it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.36it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.88it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.60it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.27it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.86it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.66it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.51it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.19it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.20it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 62.06it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.78it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.57it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.20it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.91it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.61it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.34it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.06it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 59.88it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 59.69it/s]Evaluating:  95%|█████████▌| 412/432 [00:06<00:00, 59.45it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 59.30it/s]Evaluating:  98%|█████████▊| 424/432 [00:06<00:00, 59.12it/s]Evaluating: 100%|█████████▉| 430/432 [00:06<00:00, 59.03it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.34it/s]
+05/05/2022 19:19:53 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:19:53 - INFO - __main__ -     f1 = 0.9063188507975677
+05/05/2022 19:19:53 - INFO - __main__ -     loss = 0.21110279779757576
+05/05/2022 19:19:53 - INFO - __main__ -     precision = 0.9016307206733298
+05/05/2022 19:19:53 - INFO - __main__ -     recall = 0.9110559886605244
+05/05/2022 19:19:53 - INFO - Distillation -   Epoch 6 finished
+05/05/2022 19:19:53 - INFO - Distillation -   Epoch 7
+05/05/2022 19:19:53 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:19:56 - INFO - Distillation -   Global step: 2646, epoch step:12
+05/05/2022 19:20:00 - INFO - Distillation -   Global step: 2667, epoch step:33
+05/05/2022 19:20:05 - INFO - Distillation -   Global step: 2688, epoch step:54
+05/05/2022 19:20:10 - INFO - Distillation -   Global step: 2709, epoch step:75
+05/05/2022 19:20:14 - INFO - Distillation -   Global step: 2730, epoch step:96
+05/05/2022 19:20:19 - INFO - Distillation -   Global step: 2751, epoch step:117
+05/05/2022 19:20:24 - INFO - Distillation -   Global step: 2772, epoch step:138
+05/05/2022 19:20:28 - INFO - Distillation -   Global step: 2793, epoch step:159
+05/05/2022 19:20:33 - INFO - Distillation -   Global step: 2814, epoch step:180
+05/05/2022 19:20:37 - INFO - Distillation -   Global step: 2835, epoch step:201
+05/05/2022 19:20:42 - INFO - Distillation -   Global step: 2856, epoch step:222
+05/05/2022 19:20:47 - INFO - Distillation -   Global step: 2877, epoch step:243
+05/05/2022 19:20:51 - INFO - Distillation -   Global step: 2898, epoch step:264
+05/05/2022 19:20:56 - INFO - Distillation -   Global step: 2919, epoch step:285
+05/05/2022 19:21:01 - INFO - Distillation -   Global step: 2940, epoch step:306
+05/05/2022 19:21:05 - INFO - Distillation -   Global step: 2961, epoch step:327
+05/05/2022 19:21:10 - INFO - Distillation -   Global step: 2982, epoch step:348
+05/05/2022 19:21:15 - INFO - Distillation -   Global step: 3003, epoch step:369
+05/05/2022 19:21:19 - INFO - Distillation -   Global step: 3024, epoch step:390
+05/05/2022 19:21:24 - INFO - Distillation -   Global step: 3045, epoch step:411
+05/05/2022 19:21:29 - INFO - Distillation -   Global step: 3066, epoch step:432
+05/05/2022 19:21:30 - INFO - Distillation -   Saving at global step 3073, epoch step 439 epoch 7
+05/05/2022 19:21:31 - INFO - Distillation -   Running callback function...
+05/05/2022 19:21:31 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:21:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:21:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:21:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:21:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:21:31 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:21:31 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:21:31 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:21:31 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.87it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.95it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.65it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.32it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.97it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.55it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.19it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.90it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.68it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.44it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.16it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 73.10it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.65it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.25it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.04it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.67it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.23it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.21it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.84it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.58it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.35it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.81it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.26it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.83it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.28it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.73it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.20it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.87it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.43it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 66.11it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.70it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.38it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.27it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 65.03it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.93it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.58it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.07it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.70it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.55it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.32it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.94it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.83it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.59it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.40it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.16it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.87it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.72it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.50it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.38it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 61.19it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.91it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.57it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.37it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 60.09it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 59.79it/s]Evaluating:  96%|█████████▌| 413/432 [00:06<00:00, 59.51it/s]Evaluating:  97%|█████████▋| 419/432 [00:06<00:00, 59.23it/s]Evaluating:  98%|█████████▊| 425/432 [00:06<00:00, 59.05it/s]Evaluating: 100%|█████████▉| 431/432 [00:06<00:00, 58.79it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.29it/s]
+05/05/2022 19:21:38 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:21:38 - INFO - __main__ -     f1 = 0.9067512779834304
+05/05/2022 19:21:38 - INFO - __main__ -     loss = 0.21468889804515884
+05/05/2022 19:21:38 - INFO - __main__ -     precision = 0.9021396001403017
+05/05/2022 19:21:38 - INFO - __main__ -     recall = 0.9114103472714387
+05/05/2022 19:21:38 - INFO - Distillation -   Epoch 7 finished
+05/05/2022 19:21:38 - INFO - Distillation -   Epoch 8
+05/05/2022 19:21:38 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:21:41 - INFO - Distillation -   Global step: 3087, epoch step:14
+05/05/2022 19:21:46 - INFO - Distillation -   Global step: 3108, epoch step:35
+05/05/2022 19:21:51 - INFO - Distillation -   Global step: 3129, epoch step:56
+05/05/2022 19:21:55 - INFO - Distillation -   Global step: 3150, epoch step:77
+05/05/2022 19:22:00 - INFO - Distillation -   Global step: 3171, epoch step:98
+05/05/2022 19:22:04 - INFO - Distillation -   Global step: 3192, epoch step:119
+05/05/2022 19:22:09 - INFO - Distillation -   Global step: 3213, epoch step:140
+05/05/2022 19:22:14 - INFO - Distillation -   Global step: 3234, epoch step:161
+05/05/2022 19:22:18 - INFO - Distillation -   Global step: 3255, epoch step:182
+05/05/2022 19:22:23 - INFO - Distillation -   Global step: 3276, epoch step:203
+05/05/2022 19:22:28 - INFO - Distillation -   Global step: 3297, epoch step:224
+05/05/2022 19:22:32 - INFO - Distillation -   Global step: 3318, epoch step:245
+05/05/2022 19:22:37 - INFO - Distillation -   Global step: 3339, epoch step:266
+05/05/2022 19:22:42 - INFO - Distillation -   Global step: 3360, epoch step:287
+05/05/2022 19:22:46 - INFO - Distillation -   Global step: 3381, epoch step:308
+05/05/2022 19:22:51 - INFO - Distillation -   Global step: 3402, epoch step:329
+05/05/2022 19:22:56 - INFO - Distillation -   Global step: 3423, epoch step:350
+05/05/2022 19:23:00 - INFO - Distillation -   Global step: 3444, epoch step:371
+05/05/2022 19:23:05 - INFO - Distillation -   Global step: 3465, epoch step:392
+05/05/2022 19:23:09 - INFO - Distillation -   Global step: 3486, epoch step:413
+05/05/2022 19:23:14 - INFO - Distillation -   Global step: 3507, epoch step:434
+05/05/2022 19:23:15 - INFO - Distillation -   Saving at global step 3512, epoch step 439 epoch 8
+05/05/2022 19:23:16 - INFO - Distillation -   Running callback function...
+05/05/2022 19:23:16 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:23:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:23:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:23:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:23:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:23:16 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:23:16 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:23:16 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:23:16 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.40it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 76.07it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.52it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.22it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.89it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.54it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.32it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.15it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.67it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.40it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.10it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.76it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.31it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.72it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.42it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.35it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.19it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.75it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.65it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.52it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.41it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 70.03it/s]Evaluating:  43%|████▎     | 184/432 [00:02<00:03, 69.47it/s]Evaluating:  44%|████▍     | 191/432 [00:02<00:03, 68.85it/s]Evaluating:  46%|████▌     | 198/432 [00:02<00:03, 68.27it/s]Evaluating:  47%|████▋     | 205/432 [00:02<00:03, 67.75it/s]Evaluating:  49%|████▉     | 212/432 [00:02<00:03, 67.29it/s]Evaluating:  51%|█████     | 219/432 [00:03<00:03, 66.91it/s]Evaluating:  52%|█████▏    | 226/432 [00:03<00:03, 66.48it/s]Evaluating:  54%|█████▍    | 233/432 [00:03<00:03, 66.01it/s]Evaluating:  56%|█████▌    | 240/432 [00:03<00:02, 65.65it/s]Evaluating:  57%|█████▋    | 247/432 [00:03<00:02, 65.36it/s]Evaluating:  59%|█████▉    | 254/432 [00:03<00:02, 64.99it/s]Evaluating:  60%|██████    | 261/432 [00:03<00:02, 64.81it/s]Evaluating:  62%|██████▏   | 268/432 [00:03<00:02, 64.68it/s]Evaluating:  64%|██████▎   | 275/432 [00:03<00:02, 64.48it/s]Evaluating:  65%|██████▌   | 282/432 [00:04<00:02, 64.24it/s]Evaluating:  67%|██████▋   | 289/432 [00:04<00:02, 64.11it/s]Evaluating:  69%|██████▊   | 296/432 [00:04<00:02, 63.75it/s]Evaluating:  70%|███████   | 303/432 [00:04<00:02, 63.44it/s]Evaluating:  72%|███████▏  | 310/432 [00:04<00:01, 63.14it/s]Evaluating:  73%|███████▎  | 317/432 [00:04<00:01, 62.96it/s]Evaluating:  75%|███████▌  | 324/432 [00:04<00:01, 62.74it/s]Evaluating:  77%|███████▋  | 331/432 [00:04<00:01, 62.43it/s]Evaluating:  78%|███████▊  | 338/432 [00:04<00:01, 62.27it/s]Evaluating:  80%|███████▉  | 345/432 [00:05<00:01, 62.08it/s]Evaluating:  81%|████████▏ | 352/432 [00:05<00:01, 61.99it/s]Evaluating:  83%|████████▎ | 359/432 [00:05<00:01, 61.65it/s]Evaluating:  85%|████████▍ | 366/432 [00:05<00:01, 61.56it/s]Evaluating:  86%|████████▋ | 373/432 [00:05<00:00, 61.44it/s]Evaluating:  88%|████████▊ | 380/432 [00:05<00:00, 61.28it/s]Evaluating:  90%|████████▉ | 387/432 [00:05<00:00, 61.10it/s]Evaluating:  91%|█████████ | 394/432 [00:05<00:00, 60.85it/s]Evaluating:  93%|█████████▎| 401/432 [00:05<00:00, 60.50it/s]Evaluating:  94%|█████████▍| 408/432 [00:06<00:00, 60.27it/s]Evaluating:  96%|█████████▌| 415/432 [00:06<00:00, 60.01it/s]Evaluating:  98%|█████████▊| 422/432 [00:06<00:00, 59.65it/s]Evaluating:  99%|█████████▉| 428/432 [00:06<00:00, 59.25it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.40it/s]
+05/05/2022 19:23:23 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:23:23 - INFO - __main__ -     f1 = 0.900579659230634
+05/05/2022 19:23:23 - INFO - __main__ -     loss = 0.20418278711509877
+05/05/2022 19:23:23 - INFO - __main__ -     precision = 0.8928944618599791
+05/05/2022 19:23:23 - INFO - __main__ -     recall = 0.9083982990786676
+05/05/2022 19:23:23 - INFO - Distillation -   Epoch 8 finished
+05/05/2022 19:23:23 - INFO - Distillation -   Epoch 9
+05/05/2022 19:23:23 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:23:27 - INFO - Distillation -   Global step: 3528, epoch step:16
+05/05/2022 19:23:31 - INFO - Distillation -   Global step: 3549, epoch step:37
+05/05/2022 19:23:36 - INFO - Distillation -   Global step: 3570, epoch step:58
+05/05/2022 19:23:41 - INFO - Distillation -   Global step: 3591, epoch step:79
+05/05/2022 19:23:45 - INFO - Distillation -   Global step: 3612, epoch step:100
+05/05/2022 19:23:50 - INFO - Distillation -   Global step: 3633, epoch step:121
+05/05/2022 19:23:55 - INFO - Distillation -   Global step: 3654, epoch step:142
+05/05/2022 19:23:59 - INFO - Distillation -   Global step: 3675, epoch step:163
+05/05/2022 19:24:04 - INFO - Distillation -   Global step: 3696, epoch step:184
+05/05/2022 19:24:09 - INFO - Distillation -   Global step: 3717, epoch step:205
+05/05/2022 19:24:13 - INFO - Distillation -   Global step: 3738, epoch step:226
+05/05/2022 19:24:18 - INFO - Distillation -   Global step: 3759, epoch step:247
+05/05/2022 19:24:22 - INFO - Distillation -   Global step: 3780, epoch step:268
+05/05/2022 19:24:27 - INFO - Distillation -   Global step: 3801, epoch step:289
+05/05/2022 19:24:32 - INFO - Distillation -   Global step: 3822, epoch step:310
+05/05/2022 19:24:36 - INFO - Distillation -   Global step: 3843, epoch step:331
+05/05/2022 19:24:41 - INFO - Distillation -   Global step: 3864, epoch step:352
+05/05/2022 19:24:46 - INFO - Distillation -   Global step: 3885, epoch step:373
+05/05/2022 19:24:50 - INFO - Distillation -   Global step: 3906, epoch step:394
+05/05/2022 19:24:55 - INFO - Distillation -   Global step: 3927, epoch step:415
+05/05/2022 19:25:00 - INFO - Distillation -   Global step: 3948, epoch step:436
+05/05/2022 19:25:00 - INFO - Distillation -   Saving at global step 3951, epoch step 439 epoch 9
+05/05/2022 19:25:01 - INFO - Distillation -   Running callback function...
+05/05/2022 19:25:01 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:25:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:25:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:25:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:25:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:25:01 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:25:01 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:25:01 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:25:01 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.41it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.18it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.04it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.02it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 75.00it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.86it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.55it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.21it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.79it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.41it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.18it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.83it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.36it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.06it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.15it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.87it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.77it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.79it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.46it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 69.89it/s]Evaluating:  39%|███▊      | 167/432 [00:02<00:03, 69.82it/s]Evaluating:  40%|████      | 174/432 [00:02<00:03, 69.67it/s]Evaluating:  42%|████▏     | 181/432 [00:02<00:03, 69.22it/s]Evaluating:  44%|████▎     | 188/432 [00:02<00:03, 68.80it/s]Evaluating:  45%|████▌     | 195/432 [00:02<00:03, 68.25it/s]Evaluating:  47%|████▋     | 202/432 [00:02<00:03, 67.95it/s]Evaluating:  48%|████▊     | 209/432 [00:02<00:03, 67.55it/s]Evaluating:  50%|█████     | 216/432 [00:03<00:03, 67.14it/s]Evaluating:  52%|█████▏    | 223/432 [00:03<00:03, 66.77it/s]Evaluating:  53%|█████▎    | 230/432 [00:03<00:03, 66.44it/s]Evaluating:  55%|█████▍    | 237/432 [00:03<00:02, 66.02it/s]Evaluating:  56%|█████▋    | 244/432 [00:03<00:02, 65.69it/s]Evaluating:  58%|█████▊    | 251/432 [00:03<00:02, 65.34it/s]Evaluating:  60%|█████▉    | 258/432 [00:03<00:02, 65.05it/s]Evaluating:  61%|██████▏   | 265/432 [00:03<00:02, 64.79it/s]Evaluating:  63%|██████▎   | 272/432 [00:03<00:02, 64.62it/s]Evaluating:  65%|██████▍   | 279/432 [00:04<00:02, 64.28it/s]Evaluating:  66%|██████▌   | 286/432 [00:04<00:02, 63.95it/s]Evaluating:  68%|██████▊   | 293/432 [00:04<00:02, 63.40it/s]Evaluating:  69%|██████▉   | 300/432 [00:04<00:02, 62.85it/s]Evaluating:  71%|███████   | 307/432 [00:04<00:01, 62.69it/s]Evaluating:  73%|███████▎  | 314/432 [00:04<00:01, 62.55it/s]Evaluating:  74%|███████▍  | 321/432 [00:04<00:01, 62.29it/s]Evaluating:  76%|███████▌  | 328/432 [00:04<00:01, 61.95it/s]Evaluating:  78%|███████▊  | 335/432 [00:04<00:01, 61.31it/s]Evaluating:  79%|███████▉  | 342/432 [00:05<00:01, 60.98it/s]Evaluating:  81%|████████  | 349/432 [00:05<00:01, 60.72it/s]Evaluating:  82%|████████▏ | 356/432 [00:05<00:01, 60.41it/s]Evaluating:  84%|████████▍ | 363/432 [00:05<00:01, 60.26it/s]Evaluating:  86%|████████▌ | 370/432 [00:05<00:01, 60.37it/s]Evaluating:  87%|████████▋ | 377/432 [00:05<00:00, 60.30it/s]Evaluating:  89%|████████▉ | 384/432 [00:05<00:00, 60.15it/s]Evaluating:  91%|█████████ | 391/432 [00:05<00:00, 59.96it/s]Evaluating:  92%|█████████▏| 397/432 [00:05<00:00, 59.86it/s]Evaluating:  93%|█████████▎| 403/432 [00:06<00:00, 59.66it/s]Evaluating:  95%|█████████▍| 409/432 [00:06<00:00, 59.44it/s]Evaluating:  96%|█████████▌| 415/432 [00:06<00:00, 59.25it/s]Evaluating:  97%|█████████▋| 421/432 [00:06<00:00, 58.83it/s]Evaluating:  99%|█████████▉| 427/432 [00:06<00:00, 58.59it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.05it/s]
+05/05/2022 19:25:08 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:25:08 - INFO - __main__ -     f1 = 0.9027435807245867
+05/05/2022 19:25:08 - INFO - __main__ -     loss = 0.22232565950194413
+05/05/2022 19:25:08 - INFO - __main__ -     precision = 0.8961243016759777
+05/05/2022 19:25:08 - INFO - __main__ -     recall = 0.9094613749114103
+05/05/2022 19:25:08 - INFO - Distillation -   Epoch 9 finished
+05/05/2022 19:25:08 - INFO - Distillation -   Epoch 10
+05/05/2022 19:25:08 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:25:12 - INFO - Distillation -   Global step: 3969, epoch step:18
+05/05/2022 19:25:17 - INFO - Distillation -   Global step: 3990, epoch step:39
+05/05/2022 19:25:22 - INFO - Distillation -   Global step: 4011, epoch step:60
+05/05/2022 19:25:26 - INFO - Distillation -   Global step: 4032, epoch step:81
+05/05/2022 19:25:31 - INFO - Distillation -   Global step: 4053, epoch step:102
+05/05/2022 19:25:35 - INFO - Distillation -   Global step: 4074, epoch step:123
+05/05/2022 19:25:40 - INFO - Distillation -   Global step: 4095, epoch step:144
+05/05/2022 19:25:45 - INFO - Distillation -   Global step: 4116, epoch step:165
+05/05/2022 19:25:49 - INFO - Distillation -   Global step: 4137, epoch step:186
+05/05/2022 19:25:54 - INFO - Distillation -   Global step: 4158, epoch step:207
+05/05/2022 19:25:59 - INFO - Distillation -   Global step: 4179, epoch step:228
+05/05/2022 19:26:03 - INFO - Distillation -   Global step: 4200, epoch step:249
+05/05/2022 19:26:08 - INFO - Distillation -   Global step: 4221, epoch step:270
+05/05/2022 19:26:13 - INFO - Distillation -   Global step: 4242, epoch step:291
+05/05/2022 19:26:17 - INFO - Distillation -   Global step: 4263, epoch step:312
+05/05/2022 19:26:22 - INFO - Distillation -   Global step: 4284, epoch step:333
+05/05/2022 19:26:27 - INFO - Distillation -   Global step: 4305, epoch step:354
+05/05/2022 19:26:31 - INFO - Distillation -   Global step: 4326, epoch step:375
+05/05/2022 19:26:36 - INFO - Distillation -   Global step: 4347, epoch step:396
+05/05/2022 19:26:40 - INFO - Distillation -   Global step: 4368, epoch step:417
+05/05/2022 19:26:45 - INFO - Distillation -   Global step: 4389, epoch step:438
+05/05/2022 19:26:45 - INFO - Distillation -   Saving at global step 4390, epoch step 439 epoch 10
+05/05/2022 19:26:46 - INFO - Distillation -   Running callback function...
+05/05/2022 19:26:46 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:26:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:26:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:26:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:26:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:26:46 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:26:46 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:26:46 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:26:46 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.08it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.46it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.37it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.26it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 75.13it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.61it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.96it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:05, 73.51it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.48it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.28it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.03it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.83it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.17it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.76it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.43it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 70.96it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.52it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.53it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.42it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.11it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.11it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.51it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 68.78it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.15it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 67.34it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 66.89it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 66.60it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.37it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 65.98it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 65.66it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.39it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.07it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 64.68it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 64.51it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.31it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.24it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.08it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.78it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.47it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.21it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.96it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.84it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.48it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.19it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.03it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.80it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.69it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.64it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.51it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 61.35it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 61.19it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.53it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.13it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 59.83it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 59.49it/s]Evaluating:  95%|█████████▌| 412/432 [00:06<00:00, 59.09it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 58.89it/s]Evaluating:  98%|█████████▊| 424/432 [00:06<00:00, 58.69it/s]Evaluating: 100%|█████████▉| 430/432 [00:06<00:00, 58.38it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 65.99it/s]
+05/05/2022 19:26:53 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:26:53 - INFO - __main__ -     f1 = 0.9048038008094317
+05/05/2022 19:26:53 - INFO - __main__ -     loss = 0.2067595962926008
+05/05/2022 19:26:53 - INFO - __main__ -     precision = 0.8986368402656414
+05/05/2022 19:26:53 - INFO - __main__ -     recall = 0.9110559886605244
+05/05/2022 19:26:53 - INFO - Distillation -   Epoch 10 finished
+05/05/2022 19:26:53 - INFO - Distillation -   Epoch 11
+05/05/2022 19:26:53 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:26:58 - INFO - Distillation -   Global step: 4410, epoch step:20
+05/05/2022 19:27:02 - INFO - Distillation -   Global step: 4431, epoch step:41
+05/05/2022 19:27:07 - INFO - Distillation -   Global step: 4452, epoch step:62
+05/05/2022 19:27:12 - INFO - Distillation -   Global step: 4473, epoch step:83
+05/05/2022 19:27:16 - INFO - Distillation -   Global step: 4494, epoch step:104
+05/05/2022 19:27:21 - INFO - Distillation -   Global step: 4515, epoch step:125
+05/05/2022 19:27:26 - INFO - Distillation -   Global step: 4536, epoch step:146
+05/05/2022 19:27:30 - INFO - Distillation -   Global step: 4557, epoch step:167
+05/05/2022 19:27:35 - INFO - Distillation -   Global step: 4578, epoch step:188
+05/05/2022 19:27:39 - INFO - Distillation -   Global step: 4599, epoch step:209
+05/05/2022 19:27:44 - INFO - Distillation -   Global step: 4620, epoch step:230
+05/05/2022 19:27:49 - INFO - Distillation -   Global step: 4641, epoch step:251
+05/05/2022 19:27:53 - INFO - Distillation -   Global step: 4662, epoch step:272
+05/05/2022 19:27:58 - INFO - Distillation -   Global step: 4683, epoch step:293
+05/05/2022 19:28:03 - INFO - Distillation -   Global step: 4704, epoch step:314
+05/05/2022 19:28:07 - INFO - Distillation -   Global step: 4725, epoch step:335
+05/05/2022 19:28:12 - INFO - Distillation -   Global step: 4746, epoch step:356
+05/05/2022 19:28:17 - INFO - Distillation -   Global step: 4767, epoch step:377
+05/05/2022 19:28:21 - INFO - Distillation -   Global step: 4788, epoch step:398
+05/05/2022 19:28:26 - INFO - Distillation -   Global step: 4809, epoch step:419
+05/05/2022 19:28:30 - INFO - Distillation -   Saving at global step 4829, epoch step 439 epoch 11
+05/05/2022 19:28:31 - INFO - Distillation -   Running callback function...
+05/05/2022 19:28:31 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:28:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:28:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:28:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:28:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:28:31 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:28:31 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:28:31 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:28:31 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.36it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.42it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.28it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.19it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.99it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.64it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.26it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.84it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.65it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.32it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.20it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.89it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.63it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.43it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.28it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.89it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.58it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.21it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.74it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.15it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 69.81it/s]Evaluating:  41%|████      | 175/432 [00:02<00:03, 69.67it/s]Evaluating:  42%|████▏     | 182/432 [00:02<00:03, 68.86it/s]Evaluating:  44%|████▍     | 189/432 [00:02<00:03, 68.23it/s]Evaluating:  45%|████▌     | 196/432 [00:02<00:03, 67.91it/s]Evaluating:  47%|████▋     | 203/432 [00:02<00:03, 67.54it/s]Evaluating:  49%|████▊     | 210/432 [00:02<00:03, 67.19it/s]Evaluating:  50%|█████     | 217/432 [00:03<00:03, 66.93it/s]Evaluating:  52%|█████▏    | 224/432 [00:03<00:03, 66.50it/s]Evaluating:  53%|█████▎    | 231/432 [00:03<00:03, 66.00it/s]Evaluating:  55%|█████▌    | 238/432 [00:03<00:02, 65.40it/s]Evaluating:  57%|█████▋    | 245/432 [00:03<00:02, 65.11it/s]Evaluating:  58%|█████▊    | 252/432 [00:03<00:02, 64.75it/s]Evaluating:  60%|█████▉    | 259/432 [00:03<00:02, 64.40it/s]Evaluating:  62%|██████▏   | 266/432 [00:03<00:02, 64.05it/s]Evaluating:  63%|██████▎   | 273/432 [00:03<00:02, 63.80it/s]Evaluating:  65%|██████▍   | 280/432 [00:04<00:02, 63.59it/s]Evaluating:  66%|██████▋   | 287/432 [00:04<00:02, 63.52it/s]Evaluating:  68%|██████▊   | 294/432 [00:04<00:02, 63.15it/s]Evaluating:  70%|██████▉   | 301/432 [00:04<00:02, 62.83it/s]Evaluating:  71%|███████▏  | 308/432 [00:04<00:01, 62.60it/s]Evaluating:  73%|███████▎  | 315/432 [00:04<00:01, 62.24it/s]Evaluating:  75%|███████▍  | 322/432 [00:04<00:01, 61.96it/s]Evaluating:  76%|███████▌  | 329/432 [00:04<00:01, 61.69it/s]Evaluating:  78%|███████▊  | 336/432 [00:04<00:01, 61.46it/s]Evaluating:  79%|███████▉  | 343/432 [00:05<00:01, 61.38it/s]Evaluating:  81%|████████  | 350/432 [00:05<00:01, 60.74it/s]Evaluating:  83%|████████▎ | 357/432 [00:05<00:01, 60.36it/s]Evaluating:  84%|████████▍ | 364/432 [00:05<00:01, 60.13it/s]Evaluating:  86%|████████▌ | 371/432 [00:05<00:01, 59.80it/s]Evaluating:  87%|████████▋ | 377/432 [00:05<00:00, 59.69it/s]Evaluating:  89%|████████▊ | 383/432 [00:05<00:00, 59.50it/s]Evaluating:  90%|█████████ | 389/432 [00:05<00:00, 59.29it/s]Evaluating:  91%|█████████▏| 395/432 [00:05<00:00, 59.18it/s]Evaluating:  93%|█████████▎| 401/432 [00:06<00:00, 58.96it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 58.61it/s]Evaluating:  96%|█████████▌| 413/432 [00:06<00:00, 58.22it/s]Evaluating:  97%|█████████▋| 419/432 [00:06<00:00, 57.91it/s]Evaluating:  98%|█████████▊| 425/432 [00:06<00:00, 57.85it/s]Evaluating: 100%|█████████▉| 431/432 [00:06<00:00, 57.82it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 65.75it/s]
+05/05/2022 19:28:38 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:28:38 - INFO - __main__ -     f1 = 0.9052816901408449
+05/05/2022 19:28:38 - INFO - __main__ -     loss = 0.21593965299939766
+05/05/2022 19:28:38 - INFO - __main__ -     precision = 0.8995801259622114
+05/05/2022 19:28:38 - INFO - __main__ -     recall = 0.9110559886605244
+05/05/2022 19:28:38 - INFO - Distillation -   Epoch 11 finished
+05/05/2022 19:28:38 - INFO - Distillation -   Epoch 12
+05/05/2022 19:28:38 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:28:39 - INFO - Distillation -   Global step: 4830, epoch step:1
+05/05/2022 19:28:43 - INFO - Distillation -   Global step: 4851, epoch step:22
+05/05/2022 19:28:48 - INFO - Distillation -   Global step: 4872, epoch step:43
+05/05/2022 19:28:53 - INFO - Distillation -   Global step: 4893, epoch step:64
+05/05/2022 19:28:57 - INFO - Distillation -   Global step: 4914, epoch step:85
+05/05/2022 19:29:02 - INFO - Distillation -   Global step: 4935, epoch step:106
+05/05/2022 19:29:07 - INFO - Distillation -   Global step: 4956, epoch step:127
+05/05/2022 19:29:11 - INFO - Distillation -   Global step: 4977, epoch step:148
+05/05/2022 19:29:16 - INFO - Distillation -   Global step: 4998, epoch step:169
+05/05/2022 19:29:20 - INFO - Distillation -   Global step: 5019, epoch step:190
+05/05/2022 19:29:25 - INFO - Distillation -   Global step: 5040, epoch step:211
+05/05/2022 19:29:30 - INFO - Distillation -   Global step: 5061, epoch step:232
+05/05/2022 19:29:34 - INFO - Distillation -   Global step: 5082, epoch step:253
+05/05/2022 19:29:39 - INFO - Distillation -   Global step: 5103, epoch step:274
+05/05/2022 19:29:44 - INFO - Distillation -   Global step: 5124, epoch step:295
+05/05/2022 19:29:48 - INFO - Distillation -   Global step: 5145, epoch step:316
+05/05/2022 19:29:53 - INFO - Distillation -   Global step: 5166, epoch step:337
+05/05/2022 19:29:58 - INFO - Distillation -   Global step: 5187, epoch step:358
+05/05/2022 19:30:02 - INFO - Distillation -   Global step: 5208, epoch step:379
+05/05/2022 19:30:07 - INFO - Distillation -   Global step: 5229, epoch step:400
+05/05/2022 19:30:12 - INFO - Distillation -   Global step: 5250, epoch step:421
+05/05/2022 19:30:16 - INFO - Distillation -   Saving at global step 5268, epoch step 439 epoch 12
+05/05/2022 19:30:16 - INFO - Distillation -   Running callback function...
+05/05/2022 19:30:16 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:30:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:30:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:30:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:30:16 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:30:16 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:30:16 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:30:16 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:30:16 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.07it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.48it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.34it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.07it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.62it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.49it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.22it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.13it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.80it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.53it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.11it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.95it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.54it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.00it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.88it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.49it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.94it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.79it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.72it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.60it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.29it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.71it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 68.91it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.63it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.19it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.75it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.24it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.86it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.55it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 66.18it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.96it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.67it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.30it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 65.16it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.91it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.59it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.19it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.81it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.54it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.26it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.89it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.45it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.10it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 61.84it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 61.81it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.69it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 61.74it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 61.60it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 61.27it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.91it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.52it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.24it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 60.01it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 59.77it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 59.55it/s]Evaluating:  95%|█████████▌| 412/432 [00:06<00:00, 59.21it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 59.11it/s]Evaluating:  98%|█████████▊| 424/432 [00:06<00:00, 59.06it/s]Evaluating: 100%|█████████▉| 430/432 [00:06<00:00, 58.92it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.18it/s]
+05/05/2022 19:30:24 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:30:24 - INFO - __main__ -     f1 = 0.9076015150180569
+05/05/2022 19:30:24 - INFO - __main__ -     loss = 0.20738778733287846
+05/05/2022 19:30:24 - INFO - __main__ -     precision = 0.9024347521457348
+05/05/2022 19:30:24 - INFO - __main__ -     recall = 0.9128277817150957
+05/05/2022 19:30:24 - INFO - Distillation -   Epoch 12 finished
+05/05/2022 19:30:24 - INFO - Distillation -   Epoch 13
+05/05/2022 19:30:24 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:30:24 - INFO - Distillation -   Global step: 5271, epoch step:3
+05/05/2022 19:30:29 - INFO - Distillation -   Global step: 5292, epoch step:24
+05/05/2022 19:30:34 - INFO - Distillation -   Global step: 5313, epoch step:45
+05/05/2022 19:30:38 - INFO - Distillation -   Global step: 5334, epoch step:66
+05/05/2022 19:30:43 - INFO - Distillation -   Global step: 5355, epoch step:87
+05/05/2022 19:30:48 - INFO - Distillation -   Global step: 5376, epoch step:108
+05/05/2022 19:30:52 - INFO - Distillation -   Global step: 5397, epoch step:129
+05/05/2022 19:30:57 - INFO - Distillation -   Global step: 5418, epoch step:150
+05/05/2022 19:31:01 - INFO - Distillation -   Global step: 5439, epoch step:171
+05/05/2022 19:31:06 - INFO - Distillation -   Global step: 5460, epoch step:192
+05/05/2022 19:31:11 - INFO - Distillation -   Global step: 5481, epoch step:213
+05/05/2022 19:31:15 - INFO - Distillation -   Global step: 5502, epoch step:234
+05/05/2022 19:31:20 - INFO - Distillation -   Global step: 5523, epoch step:255
+05/05/2022 19:31:25 - INFO - Distillation -   Global step: 5544, epoch step:276
+05/05/2022 19:31:29 - INFO - Distillation -   Global step: 5565, epoch step:297
+05/05/2022 19:31:34 - INFO - Distillation -   Global step: 5586, epoch step:318
+05/05/2022 19:31:39 - INFO - Distillation -   Global step: 5607, epoch step:339
+05/05/2022 19:31:43 - INFO - Distillation -   Global step: 5628, epoch step:360
+05/05/2022 19:31:48 - INFO - Distillation -   Global step: 5649, epoch step:381
+05/05/2022 19:31:53 - INFO - Distillation -   Global step: 5670, epoch step:402
+05/05/2022 19:31:57 - INFO - Distillation -   Global step: 5691, epoch step:423
+05/05/2022 19:32:01 - INFO - Distillation -   Saving at global step 5707, epoch step 439 epoch 13
+05/05/2022 19:32:01 - INFO - Distillation -   Running callback function...
+05/05/2022 19:32:01 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:32:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:32:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:32:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:32:01 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:32:01 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:32:02 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:32:02 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:32:02 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.75it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.50it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.07it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 74.71it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.36it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.12it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.98it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.80it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.69it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.64it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.25it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.70it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.29it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.02it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.97it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.63it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.90it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.23it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.02it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.00it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 69.64it/s]Evaluating:  41%|████      | 175/432 [00:02<00:03, 69.37it/s]Evaluating:  42%|████▏     | 182/432 [00:02<00:03, 68.70it/s]Evaluating:  44%|████▍     | 189/432 [00:02<00:03, 68.38it/s]Evaluating:  45%|████▌     | 196/432 [00:02<00:03, 67.92it/s]Evaluating:  47%|████▋     | 203/432 [00:02<00:03, 67.58it/s]Evaluating:  49%|████▊     | 210/432 [00:02<00:03, 67.18it/s]Evaluating:  50%|█████     | 217/432 [00:03<00:03, 66.77it/s]Evaluating:  52%|█████▏    | 224/432 [00:03<00:03, 66.44it/s]Evaluating:  53%|█████▎    | 231/432 [00:03<00:03, 66.06it/s]Evaluating:  55%|█████▌    | 238/432 [00:03<00:02, 65.67it/s]Evaluating:  57%|█████▋    | 245/432 [00:03<00:02, 65.30it/s]Evaluating:  58%|█████▊    | 252/432 [00:03<00:02, 64.96it/s]Evaluating:  60%|█████▉    | 259/432 [00:03<00:02, 64.91it/s]Evaluating:  62%|██████▏   | 266/432 [00:03<00:02, 64.64it/s]Evaluating:  63%|██████▎   | 273/432 [00:03<00:02, 64.41it/s]Evaluating:  65%|██████▍   | 280/432 [00:04<00:02, 64.22it/s]Evaluating:  66%|██████▋   | 287/432 [00:04<00:02, 63.86it/s]Evaluating:  68%|██████▊   | 294/432 [00:04<00:02, 63.46it/s]Evaluating:  70%|██████▉   | 301/432 [00:04<00:02, 63.19it/s]Evaluating:  71%|███████▏  | 308/432 [00:04<00:01, 62.82it/s]Evaluating:  73%|███████▎  | 315/432 [00:04<00:01, 62.52it/s]Evaluating:  75%|███████▍  | 322/432 [00:04<00:01, 62.32it/s]Evaluating:  76%|███████▌  | 329/432 [00:04<00:01, 62.09it/s]Evaluating:  78%|███████▊  | 336/432 [00:04<00:01, 61.83it/s]Evaluating:  79%|███████▉  | 343/432 [00:05<00:01, 61.63it/s]Evaluating:  81%|████████  | 350/432 [00:05<00:01, 61.55it/s]Evaluating:  83%|████████▎ | 357/432 [00:05<00:01, 61.53it/s]Evaluating:  84%|████████▍ | 364/432 [00:05<00:01, 61.34it/s]Evaluating:  86%|████████▌ | 371/432 [00:05<00:01, 60.98it/s]Evaluating:  88%|████████▊ | 378/432 [00:05<00:00, 60.65it/s]Evaluating:  89%|████████▉ | 385/432 [00:05<00:00, 60.46it/s]Evaluating:  91%|█████████ | 392/432 [00:05<00:00, 60.17it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 59.85it/s]Evaluating:  94%|█████████▍| 405/432 [00:06<00:00, 59.56it/s]Evaluating:  95%|█████████▌| 411/432 [00:06<00:00, 59.32it/s]Evaluating:  97%|█████████▋| 417/432 [00:06<00:00, 59.11it/s]Evaluating:  98%|█████████▊| 423/432 [00:06<00:00, 58.83it/s]Evaluating:  99%|█████████▉| 429/432 [00:06<00:00, 58.48it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.02it/s]
+05/05/2022 19:32:09 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:32:09 - INFO - __main__ -     f1 = 0.9076489249206909
+05/05/2022 19:32:09 - INFO - __main__ -     loss = 0.2099278586989539
+05/05/2022 19:32:09 - INFO - __main__ -     precision = 0.902875175315568
+05/05/2022 19:32:09 - INFO - __main__ -     recall = 0.9124734231041814
+05/05/2022 19:32:09 - INFO - Distillation -   Epoch 13 finished
+05/05/2022 19:32:09 - INFO - Distillation -   Epoch 14
+05/05/2022 19:32:09 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:32:10 - INFO - Distillation -   Global step: 5712, epoch step:5
+05/05/2022 19:32:14 - INFO - Distillation -   Global step: 5733, epoch step:26
+05/05/2022 19:32:19 - INFO - Distillation -   Global step: 5754, epoch step:47
+05/05/2022 19:32:24 - INFO - Distillation -   Global step: 5775, epoch step:68
+05/05/2022 19:32:28 - INFO - Distillation -   Global step: 5796, epoch step:89
+05/05/2022 19:32:33 - INFO - Distillation -   Global step: 5817, epoch step:110
+05/05/2022 19:32:38 - INFO - Distillation -   Global step: 5838, epoch step:131
+05/05/2022 19:32:42 - INFO - Distillation -   Global step: 5859, epoch step:152
+05/05/2022 19:32:47 - INFO - Distillation -   Global step: 5880, epoch step:173
+05/05/2022 19:32:52 - INFO - Distillation -   Global step: 5901, epoch step:194
+05/05/2022 19:32:56 - INFO - Distillation -   Global step: 5922, epoch step:215
+05/05/2022 19:33:01 - INFO - Distillation -   Global step: 5943, epoch step:236
+05/05/2022 19:33:06 - INFO - Distillation -   Global step: 5964, epoch step:257
+05/05/2022 19:33:10 - INFO - Distillation -   Global step: 5985, epoch step:278
+05/05/2022 19:33:15 - INFO - Distillation -   Global step: 6006, epoch step:299
+05/05/2022 19:33:20 - INFO - Distillation -   Global step: 6027, epoch step:320
+05/05/2022 19:33:24 - INFO - Distillation -   Global step: 6048, epoch step:341
+05/05/2022 19:33:29 - INFO - Distillation -   Global step: 6069, epoch step:362
+05/05/2022 19:33:33 - INFO - Distillation -   Global step: 6090, epoch step:383
+05/05/2022 19:33:38 - INFO - Distillation -   Global step: 6111, epoch step:404
+05/05/2022 19:33:43 - INFO - Distillation -   Global step: 6132, epoch step:425
+05/05/2022 19:33:46 - INFO - Distillation -   Saving at global step 6146, epoch step 439 epoch 14
+05/05/2022 19:33:46 - INFO - Distillation -   Running callback function...
+05/05/2022 19:33:46 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:33:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:33:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:33:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:33:46 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:33:46 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:33:47 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:33:47 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:33:47 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.19it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.97it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.35it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.21it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.95it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.47it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.88it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:05, 73.44it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.10it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 72.98it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.00it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.75it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.52it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.40it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.04it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.55it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.43it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 69.94it/s]Evaluating:  35%|███▍      | 151/432 [00:02<00:04, 69.87it/s]Evaluating:  37%|███▋      | 158/432 [00:02<00:03, 69.78it/s]Evaluating:  38%|███▊      | 165/432 [00:02<00:03, 69.65it/s]Evaluating:  40%|███▉      | 172/432 [00:02<00:03, 69.48it/s]Evaluating:  41%|████▏     | 179/432 [00:02<00:03, 69.04it/s]Evaluating:  43%|████▎     | 186/432 [00:02<00:03, 68.43it/s]Evaluating:  45%|████▍     | 193/432 [00:02<00:03, 68.01it/s]Evaluating:  46%|████▋     | 200/432 [00:02<00:03, 67.64it/s]Evaluating:  48%|████▊     | 207/432 [00:02<00:03, 67.26it/s]Evaluating:  50%|████▉     | 214/432 [00:03<00:03, 66.82it/s]Evaluating:  51%|█████     | 221/432 [00:03<00:03, 66.47it/s]Evaluating:  53%|█████▎    | 228/432 [00:03<00:03, 66.10it/s]Evaluating:  54%|█████▍    | 235/432 [00:03<00:02, 65.69it/s]Evaluating:  56%|█████▌    | 242/432 [00:03<00:02, 65.28it/s]Evaluating:  58%|█████▊    | 249/432 [00:03<00:02, 64.95it/s]Evaluating:  59%|█████▉    | 256/432 [00:03<00:02, 64.87it/s]Evaluating:  61%|██████    | 263/432 [00:03<00:02, 64.67it/s]Evaluating:  62%|██████▎   | 270/432 [00:03<00:02, 64.43it/s]Evaluating:  64%|██████▍   | 277/432 [00:03<00:02, 64.34it/s]Evaluating:  66%|██████▌   | 284/432 [00:04<00:02, 64.16it/s]Evaluating:  67%|██████▋   | 291/432 [00:04<00:02, 63.79it/s]Evaluating:  69%|██████▉   | 298/432 [00:04<00:02, 63.32it/s]Evaluating:  71%|███████   | 305/432 [00:04<00:02, 63.02it/s]Evaluating:  72%|███████▏  | 312/432 [00:04<00:01, 62.76it/s]Evaluating:  74%|███████▍  | 319/432 [00:04<00:01, 62.70it/s]Evaluating:  75%|███████▌  | 326/432 [00:04<00:01, 62.27it/s]Evaluating:  77%|███████▋  | 333/432 [00:04<00:01, 61.99it/s]Evaluating:  79%|███████▊  | 340/432 [00:05<00:01, 61.88it/s]Evaluating:  80%|████████  | 347/432 [00:05<00:01, 61.69it/s]Evaluating:  82%|████████▏ | 354/432 [00:05<00:01, 61.43it/s]Evaluating:  84%|████████▎ | 361/432 [00:05<00:01, 61.19it/s]Evaluating:  85%|████████▌ | 368/432 [00:05<00:01, 61.01it/s]Evaluating:  87%|████████▋ | 375/432 [00:05<00:00, 60.94it/s]Evaluating:  88%|████████▊ | 382/432 [00:05<00:00, 60.80it/s]Evaluating:  90%|█████████ | 389/432 [00:05<00:00, 60.30it/s]Evaluating:  92%|█████████▏| 396/432 [00:05<00:00, 60.04it/s]Evaluating:  93%|█████████▎| 403/432 [00:06<00:00, 59.77it/s]Evaluating:  95%|█████████▍| 409/432 [00:06<00:00, 59.62it/s]Evaluating:  96%|█████████▌| 415/432 [00:06<00:00, 59.36it/s]Evaluating:  97%|█████████▋| 421/432 [00:06<00:00, 59.05it/s]Evaluating:  99%|█████████▉| 427/432 [00:06<00:00, 58.75it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.04it/s]
+05/05/2022 19:33:54 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:33:54 - INFO - __main__ -     f1 = 0.906784140969163
+05/05/2022 19:33:54 - INFO - __main__ -     loss = 0.20652388479180672
+05/05/2022 19:33:54 - INFO - __main__ -     precision = 0.9018576936558009
+05/05/2022 19:33:54 - INFO - __main__ -     recall = 0.9117647058823529
+05/05/2022 19:33:54 - INFO - Distillation -   Epoch 14 finished
+05/05/2022 19:33:54 - INFO - Distillation -   Epoch 15
+05/05/2022 19:33:54 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:33:55 - INFO - Distillation -   Global step: 6153, epoch step:7
+05/05/2022 19:34:00 - INFO - Distillation -   Global step: 6174, epoch step:28
+05/05/2022 19:34:05 - INFO - Distillation -   Global step: 6195, epoch step:49
+05/05/2022 19:34:09 - INFO - Distillation -   Global step: 6216, epoch step:70
+05/05/2022 19:34:14 - INFO - Distillation -   Global step: 6237, epoch step:91
+05/05/2022 19:34:19 - INFO - Distillation -   Global step: 6258, epoch step:112
+05/05/2022 19:34:23 - INFO - Distillation -   Global step: 6279, epoch step:133
+05/05/2022 19:34:28 - INFO - Distillation -   Global step: 6300, epoch step:154
+05/05/2022 19:34:33 - INFO - Distillation -   Global step: 6321, epoch step:175
+05/05/2022 19:34:37 - INFO - Distillation -   Global step: 6342, epoch step:196
+05/05/2022 19:34:42 - INFO - Distillation -   Global step: 6363, epoch step:217
+05/05/2022 19:34:46 - INFO - Distillation -   Global step: 6384, epoch step:238
+05/05/2022 19:34:51 - INFO - Distillation -   Global step: 6405, epoch step:259
+05/05/2022 19:34:56 - INFO - Distillation -   Global step: 6426, epoch step:280
+05/05/2022 19:35:00 - INFO - Distillation -   Global step: 6447, epoch step:301
+05/05/2022 19:35:05 - INFO - Distillation -   Global step: 6468, epoch step:322
+05/05/2022 19:35:10 - INFO - Distillation -   Global step: 6489, epoch step:343
+05/05/2022 19:35:14 - INFO - Distillation -   Global step: 6510, epoch step:364
+05/05/2022 19:35:19 - INFO - Distillation -   Global step: 6531, epoch step:385
+05/05/2022 19:35:24 - INFO - Distillation -   Global step: 6552, epoch step:406
+05/05/2022 19:35:28 - INFO - Distillation -   Global step: 6573, epoch step:427
+05/05/2022 19:35:31 - INFO - Distillation -   Saving at global step 6585, epoch step 439 epoch 15
+05/05/2022 19:35:31 - INFO - Distillation -   Running callback function...
+05/05/2022 19:35:31 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:35:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:35:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:35:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:35:31 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:35:31 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:35:32 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:35:32 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:35:32 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 76.06it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.69it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.44it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.28it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.99it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.57it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.18it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 74.03it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.83it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.41it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.07it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.09it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 71.57it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 70.75it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 69.92it/s]Evaluating:  29%|██▉       | 127/432 [00:01<00:04, 69.40it/s]Evaluating:  31%|███       | 134/432 [00:01<00:04, 69.02it/s]Evaluating:  33%|███▎      | 141/432 [00:01<00:04, 68.72it/s]Evaluating:  34%|███▍      | 148/432 [00:02<00:04, 68.98it/s]Evaluating:  36%|███▌      | 156/432 [00:02<00:03, 69.40it/s]Evaluating:  38%|███▊      | 163/432 [00:02<00:03, 69.33it/s]Evaluating:  39%|███▉      | 170/432 [00:02<00:03, 69.29it/s]Evaluating:  41%|████      | 177/432 [00:02<00:03, 69.02it/s]Evaluating:  43%|████▎     | 184/432 [00:02<00:03, 68.44it/s]Evaluating:  44%|████▍     | 191/432 [00:02<00:03, 68.04it/s]Evaluating:  46%|████▌     | 198/432 [00:02<00:03, 67.75it/s]Evaluating:  47%|████▋     | 205/432 [00:02<00:03, 67.52it/s]Evaluating:  49%|████▉     | 212/432 [00:02<00:03, 67.29it/s]Evaluating:  51%|█████     | 219/432 [00:03<00:03, 66.90it/s]Evaluating:  52%|█████▏    | 226/432 [00:03<00:03, 66.43it/s]Evaluating:  54%|█████▍    | 233/432 [00:03<00:03, 66.01it/s]Evaluating:  56%|█████▌    | 240/432 [00:03<00:02, 65.69it/s]Evaluating:  57%|█████▋    | 247/432 [00:03<00:02, 65.33it/s]Evaluating:  59%|█████▉    | 254/432 [00:03<00:02, 64.91it/s]Evaluating:  60%|██████    | 261/432 [00:03<00:02, 64.71it/s]Evaluating:  62%|██████▏   | 268/432 [00:03<00:02, 64.61it/s]Evaluating:  64%|██████▎   | 275/432 [00:03<00:02, 64.39it/s]Evaluating:  65%|██████▌   | 282/432 [00:04<00:02, 64.07it/s]Evaluating:  67%|██████▋   | 289/432 [00:04<00:02, 63.66it/s]Evaluating:  69%|██████▊   | 296/432 [00:04<00:02, 63.40it/s]Evaluating:  70%|███████   | 303/432 [00:04<00:02, 63.10it/s]Evaluating:  72%|███████▏  | 310/432 [00:04<00:01, 62.96it/s]Evaluating:  73%|███████▎  | 317/432 [00:04<00:01, 62.62it/s]Evaluating:  75%|███████▌  | 324/432 [00:04<00:01, 62.22it/s]Evaluating:  77%|███████▋  | 331/432 [00:04<00:01, 61.89it/s]Evaluating:  78%|███████▊  | 338/432 [00:04<00:01, 61.68it/s]Evaluating:  80%|███████▉  | 345/432 [00:05<00:01, 61.44it/s]Evaluating:  81%|████████▏ | 352/432 [00:05<00:01, 61.07it/s]Evaluating:  83%|████████▎ | 359/432 [00:05<00:01, 60.95it/s]Evaluating:  85%|████████▍ | 366/432 [00:05<00:01, 60.75it/s]Evaluating:  86%|████████▋ | 373/432 [00:05<00:00, 60.66it/s]Evaluating:  88%|████████▊ | 380/432 [00:05<00:00, 60.34it/s]Evaluating:  90%|████████▉ | 387/432 [00:05<00:00, 60.13it/s]Evaluating:  91%|█████████ | 394/432 [00:05<00:00, 59.87it/s]Evaluating:  93%|█████████▎| 400/432 [00:06<00:00, 59.75it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 59.55it/s]Evaluating:  95%|█████████▌| 412/432 [00:06<00:00, 59.27it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 59.14it/s]Evaluating:  98%|█████████▊| 424/432 [00:06<00:00, 58.75it/s]Evaluating: 100%|█████████▉| 430/432 [00:06<00:00, 58.32it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 65.80it/s]
+05/05/2022 19:35:39 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:35:39 - INFO - __main__ -     f1 = 0.9100687709398695
+05/05/2022 19:35:39 - INFO - __main__ -     loss = 0.20702091029494024
+05/05/2022 19:35:39 - INFO - __main__ -     precision = 0.9057564057564057
+05/05/2022 19:35:39 - INFO - __main__ -     recall = 0.9144223954642098
+05/05/2022 19:35:39 - INFO - Distillation -   Epoch 15 finished
+05/05/2022 19:35:39 - INFO - Distillation -   Epoch 16
+05/05/2022 19:35:39 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:35:41 - INFO - Distillation -   Global step: 6594, epoch step:9
+05/05/2022 19:35:46 - INFO - Distillation -   Global step: 6615, epoch step:30
+05/05/2022 19:35:50 - INFO - Distillation -   Global step: 6636, epoch step:51
+05/05/2022 19:35:55 - INFO - Distillation -   Global step: 6657, epoch step:72
+05/05/2022 19:36:00 - INFO - Distillation -   Global step: 6678, epoch step:93
+05/05/2022 19:36:04 - INFO - Distillation -   Global step: 6699, epoch step:114
+05/05/2022 19:36:09 - INFO - Distillation -   Global step: 6720, epoch step:135
+05/05/2022 19:36:14 - INFO - Distillation -   Global step: 6741, epoch step:156
+05/05/2022 19:36:18 - INFO - Distillation -   Global step: 6762, epoch step:177
+05/05/2022 19:36:23 - INFO - Distillation -   Global step: 6783, epoch step:198
+05/05/2022 19:36:27 - INFO - Distillation -   Global step: 6804, epoch step:219
+05/05/2022 19:36:32 - INFO - Distillation -   Global step: 6825, epoch step:240
+05/05/2022 19:36:37 - INFO - Distillation -   Global step: 6846, epoch step:261
+05/05/2022 19:36:41 - INFO - Distillation -   Global step: 6867, epoch step:282
+05/05/2022 19:36:46 - INFO - Distillation -   Global step: 6888, epoch step:303
+05/05/2022 19:36:51 - INFO - Distillation -   Global step: 6909, epoch step:324
+05/05/2022 19:36:55 - INFO - Distillation -   Global step: 6930, epoch step:345
+05/05/2022 19:37:00 - INFO - Distillation -   Global step: 6951, epoch step:366
+05/05/2022 19:37:05 - INFO - Distillation -   Global step: 6972, epoch step:387
+05/05/2022 19:37:09 - INFO - Distillation -   Global step: 6993, epoch step:408
+05/05/2022 19:37:14 - INFO - Distillation -   Global step: 7014, epoch step:429
+05/05/2022 19:37:16 - INFO - Distillation -   Saving at global step 7024, epoch step 439 epoch 16
+05/05/2022 19:37:17 - INFO - Distillation -   Running callback function...
+05/05/2022 19:37:17 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:37:17 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:37:17 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:37:17 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:37:17 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:37:17 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:37:17 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:37:17 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:37:17 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.80it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.88it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.32it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.27it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.90it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.63it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.34it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.95it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.63it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.18it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.86it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.61it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.51it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.24it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.98it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.56it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.16it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.95it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.73it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.52it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.33it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.88it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.21it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.83it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.23it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.77it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.26it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 66.88it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.32it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 65.86it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 65.55it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.29it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 64.98it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 64.79it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 64.60it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 64.45it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.22it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 63.79it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 63.39it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.02it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 62.74it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 62.51it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 62.16it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 61.71it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 61.50it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 61.28it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 60.95it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 60.89it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 60.81it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 60.75it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 60.54it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 60.18it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 59.86it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 59.61it/s]Evaluating:  94%|█████████▍| 405/432 [00:06<00:00, 59.31it/s]Evaluating:  95%|█████████▌| 411/432 [00:06<00:00, 59.05it/s]Evaluating:  97%|█████████▋| 417/432 [00:06<00:00, 58.68it/s]Evaluating:  98%|█████████▊| 423/432 [00:06<00:00, 58.57it/s]Evaluating:  99%|█████████▉| 429/432 [00:06<00:00, 58.54it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.04it/s]
+05/05/2022 19:37:24 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:37:24 - INFO - __main__ -     f1 = 0.908481157885447
+05/05/2022 19:37:24 - INFO - __main__ -     loss = 0.2047334542260128
+05/05/2022 19:37:24 - INFO - __main__ -     precision = 0.9050465975030771
+05/05/2022 19:37:24 - INFO - __main__ -     recall = 0.91194188518781
+05/05/2022 19:37:24 - INFO - Distillation -   Epoch 16 finished
+05/05/2022 19:37:24 - INFO - Distillation -   Epoch 17
+05/05/2022 19:37:24 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:37:27 - INFO - Distillation -   Global step: 7035, epoch step:11
+05/05/2022 19:37:31 - INFO - Distillation -   Global step: 7056, epoch step:32
+05/05/2022 19:37:36 - INFO - Distillation -   Global step: 7077, epoch step:53
+05/05/2022 19:37:41 - INFO - Distillation -   Global step: 7098, epoch step:74
+05/05/2022 19:37:45 - INFO - Distillation -   Global step: 7119, epoch step:95
+05/05/2022 19:37:50 - INFO - Distillation -   Global step: 7140, epoch step:116
+05/05/2022 19:37:55 - INFO - Distillation -   Global step: 7161, epoch step:137
+05/05/2022 19:37:59 - INFO - Distillation -   Global step: 7182, epoch step:158
+05/05/2022 19:38:04 - INFO - Distillation -   Global step: 7203, epoch step:179
+05/05/2022 19:38:09 - INFO - Distillation -   Global step: 7224, epoch step:200
+05/05/2022 19:38:13 - INFO - Distillation -   Global step: 7245, epoch step:221
+05/05/2022 19:38:18 - INFO - Distillation -   Global step: 7266, epoch step:242
+05/05/2022 19:38:23 - INFO - Distillation -   Global step: 7287, epoch step:263
+05/05/2022 19:38:27 - INFO - Distillation -   Global step: 7308, epoch step:284
+05/05/2022 19:38:32 - INFO - Distillation -   Global step: 7329, epoch step:305
+05/05/2022 19:38:36 - INFO - Distillation -   Global step: 7350, epoch step:326
+05/05/2022 19:38:41 - INFO - Distillation -   Global step: 7371, epoch step:347
+05/05/2022 19:38:46 - INFO - Distillation -   Global step: 7392, epoch step:368
+05/05/2022 19:38:50 - INFO - Distillation -   Global step: 7413, epoch step:389
+05/05/2022 19:38:55 - INFO - Distillation -   Global step: 7434, epoch step:410
+05/05/2022 19:39:00 - INFO - Distillation -   Global step: 7455, epoch step:431
+05/05/2022 19:39:01 - INFO - Distillation -   Saving at global step 7463, epoch step 439 epoch 17
+05/05/2022 19:39:02 - INFO - Distillation -   Running callback function...
+05/05/2022 19:39:02 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:39:02 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:39:02 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:39:02 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:39:02 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:39:02 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:39:02 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:39:02 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:39:02 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.09it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.00it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 74.80it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 74.66it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.22it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 73.98it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.85it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:05, 73.39it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.17it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 72.78it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.44it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.26it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 71.97it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.64it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.33it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.02it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.51it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.25it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:04, 69.90it/s]Evaluating:  37%|███▋      | 159/432 [00:02<00:03, 69.35it/s]Evaluating:  38%|███▊      | 166/432 [00:02<00:03, 69.24it/s]Evaluating:  40%|████      | 173/432 [00:02<00:03, 69.09it/s]Evaluating:  42%|████▏     | 180/432 [00:02<00:03, 68.54it/s]Evaluating:  43%|████▎     | 187/432 [00:02<00:03, 68.13it/s]Evaluating:  45%|████▍     | 194/432 [00:02<00:03, 67.88it/s]Evaluating:  47%|████▋     | 201/432 [00:02<00:03, 67.55it/s]Evaluating:  48%|████▊     | 208/432 [00:02<00:03, 66.81it/s]Evaluating:  50%|████▉     | 215/432 [00:03<00:03, 66.22it/s]Evaluating:  51%|█████▏    | 222/432 [00:03<00:03, 65.83it/s]Evaluating:  53%|█████▎    | 229/432 [00:03<00:03, 65.53it/s]Evaluating:  55%|█████▍    | 236/432 [00:03<00:03, 65.28it/s]Evaluating:  56%|█████▋    | 243/432 [00:03<00:02, 64.94it/s]Evaluating:  58%|█████▊    | 250/432 [00:03<00:02, 64.62it/s]Evaluating:  59%|█████▉    | 257/432 [00:03<00:02, 64.37it/s]Evaluating:  61%|██████    | 264/432 [00:03<00:02, 64.11it/s]Evaluating:  63%|██████▎   | 271/432 [00:03<00:02, 63.80it/s]Evaluating:  64%|██████▍   | 278/432 [00:04<00:02, 63.59it/s]Evaluating:  66%|██████▌   | 285/432 [00:04<00:02, 63.36it/s]Evaluating:  68%|██████▊   | 292/432 [00:04<00:02, 63.12it/s]Evaluating:  69%|██████▉   | 299/432 [00:04<00:02, 62.64it/s]Evaluating:  71%|███████   | 306/432 [00:04<00:02, 62.16it/s]Evaluating:  72%|███████▏  | 313/432 [00:04<00:01, 61.87it/s]Evaluating:  74%|███████▍  | 320/432 [00:04<00:01, 61.64it/s]Evaluating:  76%|███████▌  | 327/432 [00:04<00:01, 61.47it/s]Evaluating:  77%|███████▋  | 334/432 [00:04<00:01, 61.28it/s]Evaluating:  79%|███████▉  | 341/432 [00:05<00:01, 61.13it/s]Evaluating:  81%|████████  | 348/432 [00:05<00:01, 60.90it/s]Evaluating:  82%|████████▏ | 355/432 [00:05<00:01, 60.71it/s]Evaluating:  84%|████████▍ | 362/432 [00:05<00:01, 60.61it/s]Evaluating:  85%|████████▌ | 369/432 [00:05<00:01, 60.30it/s]Evaluating:  87%|████████▋ | 376/432 [00:05<00:00, 60.23it/s]Evaluating:  89%|████████▊ | 383/432 [00:05<00:00, 60.08it/s]Evaluating:  90%|█████████ | 390/432 [00:05<00:00, 60.02it/s]Evaluating:  92%|█████████▏| 397/432 [00:05<00:00, 59.77it/s]Evaluating:  93%|█████████▎| 403/432 [00:06<00:00, 59.49it/s]Evaluating:  95%|█████████▍| 409/432 [00:06<00:00, 59.21it/s]Evaluating:  96%|█████████▌| 415/432 [00:06<00:00, 58.83it/s]Evaluating:  97%|█████████▋| 421/432 [00:06<00:00, 58.58it/s]Evaluating:  99%|█████████▉| 427/432 [00:06<00:00, 58.31it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 65.55it/s]
+05/05/2022 19:39:10 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:39:10 - INFO - __main__ -     f1 = 0.9091389794659381
+05/05/2022 19:39:10 - INFO - __main__ -     loss = 0.2053652931990518
+05/05/2022 19:39:10 - INFO - __main__ -     precision = 0.904436261616693
+05/05/2022 19:39:10 - INFO - __main__ -     recall = 0.9138908575478384
+05/05/2022 19:39:10 - INFO - Distillation -   Epoch 17 finished
+05/05/2022 19:39:10 - INFO - Distillation -   Epoch 18
+05/05/2022 19:39:10 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:39:13 - INFO - Distillation -   Global step: 7476, epoch step:13
+05/05/2022 19:39:17 - INFO - Distillation -   Global step: 7497, epoch step:34
+05/05/2022 19:39:22 - INFO - Distillation -   Global step: 7518, epoch step:55
+05/05/2022 19:39:27 - INFO - Distillation -   Global step: 7539, epoch step:76
+05/05/2022 19:39:31 - INFO - Distillation -   Global step: 7560, epoch step:97
+05/05/2022 19:39:36 - INFO - Distillation -   Global step: 7581, epoch step:118
+05/05/2022 19:39:40 - INFO - Distillation -   Global step: 7602, epoch step:139
+05/05/2022 19:39:45 - INFO - Distillation -   Global step: 7623, epoch step:160
+05/05/2022 19:39:50 - INFO - Distillation -   Global step: 7644, epoch step:181
+05/05/2022 19:39:54 - INFO - Distillation -   Global step: 7665, epoch step:202
+05/05/2022 19:39:59 - INFO - Distillation -   Global step: 7686, epoch step:223
+05/05/2022 19:40:04 - INFO - Distillation -   Global step: 7707, epoch step:244
+05/05/2022 19:40:08 - INFO - Distillation -   Global step: 7728, epoch step:265
+05/05/2022 19:40:13 - INFO - Distillation -   Global step: 7749, epoch step:286
+05/05/2022 19:40:18 - INFO - Distillation -   Global step: 7770, epoch step:307
+05/05/2022 19:40:22 - INFO - Distillation -   Global step: 7791, epoch step:328
+05/05/2022 19:40:27 - INFO - Distillation -   Global step: 7812, epoch step:349
+05/05/2022 19:40:32 - INFO - Distillation -   Global step: 7833, epoch step:370
+05/05/2022 19:40:36 - INFO - Distillation -   Global step: 7854, epoch step:391
+05/05/2022 19:40:41 - INFO - Distillation -   Global step: 7875, epoch step:412
+05/05/2022 19:40:46 - INFO - Distillation -   Global step: 7896, epoch step:433
+05/05/2022 19:40:47 - INFO - Distillation -   Saving at global step 7902, epoch step 439 epoch 18
+05/05/2022 19:40:47 - INFO - Distillation -   Running callback function...
+05/05/2022 19:40:47 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:40:47 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:40:47 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:40:47 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:40:47 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:40:47 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:40:48 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:40:48 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:40:48 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.06it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 74.42it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 74.24it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 74.27it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.19it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.03it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.75it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.62it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.51it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.17it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.79it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.53it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.23it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.15it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.97it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.65it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.31it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.10it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.43it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.17it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 69.85it/s]Evaluating:  41%|████      | 175/432 [00:02<00:03, 69.63it/s]Evaluating:  42%|████▏     | 182/432 [00:02<00:03, 68.90it/s]Evaluating:  44%|████▍     | 189/432 [00:02<00:03, 68.35it/s]Evaluating:  45%|████▌     | 196/432 [00:02<00:03, 67.74it/s]Evaluating:  47%|████▋     | 203/432 [00:02<00:03, 67.47it/s]Evaluating:  49%|████▊     | 210/432 [00:02<00:03, 67.20it/s]Evaluating:  50%|█████     | 217/432 [00:03<00:03, 66.85it/s]Evaluating:  52%|█████▏    | 224/432 [00:03<00:03, 66.47it/s]Evaluating:  53%|█████▎    | 231/432 [00:03<00:03, 66.23it/s]Evaluating:  55%|█████▌    | 238/432 [00:03<00:02, 65.99it/s]Evaluating:  57%|█████▋    | 245/432 [00:03<00:02, 65.73it/s]Evaluating:  58%|█████▊    | 252/432 [00:03<00:02, 65.46it/s]Evaluating:  60%|█████▉    | 259/432 [00:03<00:02, 65.10it/s]Evaluating:  62%|██████▏   | 266/432 [00:03<00:02, 64.69it/s]Evaluating:  63%|██████▎   | 273/432 [00:03<00:02, 64.50it/s]Evaluating:  65%|██████▍   | 280/432 [00:04<00:02, 64.25it/s]Evaluating:  66%|██████▋   | 287/432 [00:04<00:02, 63.92it/s]Evaluating:  68%|██████▊   | 294/432 [00:04<00:02, 63.62it/s]Evaluating:  70%|██████▉   | 301/432 [00:04<00:02, 63.39it/s]Evaluating:  71%|███████▏  | 308/432 [00:04<00:01, 63.05it/s]Evaluating:  73%|███████▎  | 315/432 [00:04<00:01, 62.86it/s]Evaluating:  75%|███████▍  | 322/432 [00:04<00:01, 62.39it/s]Evaluating:  76%|███████▌  | 329/432 [00:04<00:01, 62.13it/s]Evaluating:  78%|███████▊  | 336/432 [00:04<00:01, 62.07it/s]Evaluating:  79%|███████▉  | 343/432 [00:05<00:01, 62.03it/s]Evaluating:  81%|████████  | 350/432 [00:05<00:01, 61.79it/s]Evaluating:  83%|████████▎ | 357/432 [00:05<00:01, 61.59it/s]Evaluating:  84%|████████▍ | 364/432 [00:05<00:01, 61.23it/s]Evaluating:  86%|████████▌ | 371/432 [00:05<00:01, 60.99it/s]Evaluating:  88%|████████▊ | 378/432 [00:05<00:00, 60.80it/s]Evaluating:  89%|████████▉ | 385/432 [00:05<00:00, 60.45it/s]Evaluating:  91%|█████████ | 392/432 [00:05<00:00, 60.05it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 59.77it/s]Evaluating:  94%|█████████▍| 405/432 [00:06<00:00, 59.59it/s]Evaluating:  95%|█████████▌| 411/432 [00:06<00:00, 59.41it/s]Evaluating:  97%|█████████▋| 417/432 [00:06<00:00, 59.11it/s]Evaluating:  98%|█████████▊| 423/432 [00:06<00:00, 58.87it/s]Evaluating:  99%|█████████▉| 429/432 [00:06<00:00, 58.82it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.10it/s]
+05/05/2022 19:40:55 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:40:55 - INFO - __main__ -     f1 = 0.910196527716577
+05/05/2022 19:40:55 - INFO - __main__ -     loss = 0.20204960283225273
+05/05/2022 19:40:55 - INFO - __main__ -     precision = 0.9054883394704542
+05/05/2022 19:40:55 - INFO - __main__ -     recall = 0.9149539333805812
+05/05/2022 19:40:55 - INFO - Distillation -   Epoch 18 finished
+05/05/2022 19:40:55 - INFO - Distillation -   Epoch 19
+05/05/2022 19:40:55 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:40:58 - INFO - Distillation -   Global step: 7917, epoch step:15
+05/05/2022 19:41:03 - INFO - Distillation -   Global step: 7938, epoch step:36
+05/05/2022 19:41:08 - INFO - Distillation -   Global step: 7959, epoch step:57
+05/05/2022 19:41:12 - INFO - Distillation -   Global step: 7980, epoch step:78
+05/05/2022 19:41:17 - INFO - Distillation -   Global step: 8001, epoch step:99
+05/05/2022 19:41:22 - INFO - Distillation -   Global step: 8022, epoch step:120
+05/05/2022 19:41:26 - INFO - Distillation -   Global step: 8043, epoch step:141
+05/05/2022 19:41:31 - INFO - Distillation -   Global step: 8064, epoch step:162
+05/05/2022 19:41:35 - INFO - Distillation -   Global step: 8085, epoch step:183
+05/05/2022 19:41:40 - INFO - Distillation -   Global step: 8106, epoch step:204
+05/05/2022 19:41:45 - INFO - Distillation -   Global step: 8127, epoch step:225
+05/05/2022 19:41:49 - INFO - Distillation -   Global step: 8148, epoch step:246
+05/05/2022 19:41:54 - INFO - Distillation -   Global step: 8169, epoch step:267
+05/05/2022 19:41:59 - INFO - Distillation -   Global step: 8190, epoch step:288
+05/05/2022 19:42:03 - INFO - Distillation -   Global step: 8211, epoch step:309
+05/05/2022 19:42:08 - INFO - Distillation -   Global step: 8232, epoch step:330
+05/05/2022 19:42:13 - INFO - Distillation -   Global step: 8253, epoch step:351
+05/05/2022 19:42:17 - INFO - Distillation -   Global step: 8274, epoch step:372
+05/05/2022 19:42:22 - INFO - Distillation -   Global step: 8295, epoch step:393
+05/05/2022 19:42:27 - INFO - Distillation -   Global step: 8316, epoch step:414
+05/05/2022 19:42:31 - INFO - Distillation -   Global step: 8337, epoch step:435
+05/05/2022 19:42:32 - INFO - Distillation -   Saving at global step 8341, epoch step 439 epoch 19
+05/05/2022 19:42:33 - INFO - Distillation -   Running callback function...
+05/05/2022 19:42:33 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:42:33 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:42:33 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:42:33 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:42:33 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:42:33 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:42:33 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:42:33 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:42:33 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.81it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.63it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 75.39it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 75.23it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.80it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.59it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 74.18it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:04, 73.87it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.85it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.76it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.52it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 73.21it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.90it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.33it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.91it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.39it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.93it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 70.99it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 70.79it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.43it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 70.16it/s]Evaluating:  41%|████      | 176/432 [00:02<00:03, 69.69it/s]Evaluating:  42%|████▏     | 183/432 [00:02<00:03, 69.08it/s]Evaluating:  44%|████▍     | 190/432 [00:02<00:03, 68.69it/s]Evaluating:  46%|████▌     | 197/432 [00:02<00:03, 68.32it/s]Evaluating:  47%|████▋     | 204/432 [00:02<00:03, 67.99it/s]Evaluating:  49%|████▉     | 211/432 [00:02<00:03, 67.59it/s]Evaluating:  50%|█████     | 218/432 [00:03<00:03, 67.02it/s]Evaluating:  52%|█████▏    | 225/432 [00:03<00:03, 66.62it/s]Evaluating:  54%|█████▎    | 232/432 [00:03<00:03, 66.44it/s]Evaluating:  55%|█████▌    | 239/432 [00:03<00:02, 66.19it/s]Evaluating:  57%|█████▋    | 246/432 [00:03<00:02, 65.99it/s]Evaluating:  59%|█████▊    | 253/432 [00:03<00:02, 65.70it/s]Evaluating:  60%|██████    | 260/432 [00:03<00:02, 65.54it/s]Evaluating:  62%|██████▏   | 267/432 [00:03<00:02, 65.39it/s]Evaluating:  63%|██████▎   | 274/432 [00:03<00:02, 65.15it/s]Evaluating:  65%|██████▌   | 281/432 [00:04<00:02, 64.80it/s]Evaluating:  67%|██████▋   | 288/432 [00:04<00:02, 64.28it/s]Evaluating:  68%|██████▊   | 295/432 [00:04<00:02, 64.07it/s]Evaluating:  70%|██████▉   | 302/432 [00:04<00:02, 63.91it/s]Evaluating:  72%|███████▏  | 309/432 [00:04<00:01, 63.66it/s]Evaluating:  73%|███████▎  | 316/432 [00:04<00:01, 63.35it/s]Evaluating:  75%|███████▍  | 323/432 [00:04<00:01, 63.15it/s]Evaluating:  76%|███████▋  | 330/432 [00:04<00:01, 62.96it/s]Evaluating:  78%|███████▊  | 337/432 [00:04<00:01, 62.78it/s]Evaluating:  80%|███████▉  | 344/432 [00:05<00:01, 62.56it/s]Evaluating:  81%|████████▏ | 351/432 [00:05<00:01, 62.30it/s]Evaluating:  83%|████████▎ | 358/432 [00:05<00:01, 62.37it/s]Evaluating:  84%|████████▍ | 365/432 [00:05<00:01, 62.32it/s]Evaluating:  86%|████████▌ | 372/432 [00:05<00:00, 62.14it/s]Evaluating:  88%|████████▊ | 379/432 [00:05<00:00, 61.84it/s]Evaluating:  89%|████████▉ | 386/432 [00:05<00:00, 61.48it/s]Evaluating:  91%|█████████ | 393/432 [00:05<00:00, 61.27it/s]Evaluating:  93%|█████████▎| 400/432 [00:05<00:00, 60.87it/s]Evaluating:  94%|█████████▍| 407/432 [00:06<00:00, 60.61it/s]Evaluating:  96%|█████████▌| 414/432 [00:06<00:00, 60.35it/s]Evaluating:  97%|█████████▋| 421/432 [00:06<00:00, 60.12it/s]Evaluating:  99%|█████████▉| 428/432 [00:06<00:00, 59.95it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.72it/s]
+05/05/2022 19:42:40 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:42:40 - INFO - __main__ -     f1 = 0.9102292768959435
+05/05/2022 19:42:40 - INFO - __main__ -     loss = 0.2030707029980308
+05/05/2022 19:42:40 - INFO - __main__ -     precision = 0.9060744382022472
+05/05/2022 19:42:40 - INFO - __main__ -     recall = 0.9144223954642098
+05/05/2022 19:42:40 - INFO - Distillation -   Epoch 19 finished
+05/05/2022 19:42:40 - INFO - Distillation -   Epoch 20
+05/05/2022 19:42:40 - INFO - Distillation -   Length of current epoch in forward batch: 439
+05/05/2022 19:42:44 - INFO - Distillation -   Global step: 8358, epoch step:17
+05/05/2022 19:42:49 - INFO - Distillation -   Global step: 8379, epoch step:38
+05/05/2022 19:42:53 - INFO - Distillation -   Global step: 8400, epoch step:59
+05/05/2022 19:42:58 - INFO - Distillation -   Global step: 8421, epoch step:80
+05/05/2022 19:43:02 - INFO - Distillation -   Global step: 8442, epoch step:101
+05/05/2022 19:43:07 - INFO - Distillation -   Global step: 8463, epoch step:122
+05/05/2022 19:43:12 - INFO - Distillation -   Global step: 8484, epoch step:143
+05/05/2022 19:43:16 - INFO - Distillation -   Global step: 8505, epoch step:164
+05/05/2022 19:43:21 - INFO - Distillation -   Global step: 8526, epoch step:185
+05/05/2022 19:43:26 - INFO - Distillation -   Global step: 8547, epoch step:206
+05/05/2022 19:43:30 - INFO - Distillation -   Global step: 8568, epoch step:227
+05/05/2022 19:43:35 - INFO - Distillation -   Global step: 8589, epoch step:248
+05/05/2022 19:43:40 - INFO - Distillation -   Global step: 8610, epoch step:269
+05/05/2022 19:43:44 - INFO - Distillation -   Global step: 8631, epoch step:290
+05/05/2022 19:43:49 - INFO - Distillation -   Global step: 8652, epoch step:311
+05/05/2022 19:43:54 - INFO - Distillation -   Global step: 8673, epoch step:332
+05/05/2022 19:43:58 - INFO - Distillation -   Global step: 8694, epoch step:353
+05/05/2022 19:44:03 - INFO - Distillation -   Global step: 8715, epoch step:374
+05/05/2022 19:44:08 - INFO - Distillation -   Global step: 8736, epoch step:395
+05/05/2022 19:44:12 - INFO - Distillation -   Global step: 8757, epoch step:416
+05/05/2022 19:44:17 - INFO - Distillation -   Global step: 8778, epoch step:437
+05/05/2022 19:44:17 - INFO - Distillation -   Saving at global step 8780, epoch step 439 epoch 20
+05/05/2022 19:44:18 - INFO - Distillation -   Running callback function...
+05/05/2022 19:44:18 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/teacher' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:44:18 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/vocab.txt
+05/05/2022 19:44:18 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/added_tokens.json
+05/05/2022 19:44:18 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/special_tokens_map.json
+05/05/2022 19:44:18 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/teacher/tokenizer_config.json
+05/05/2022 19:44:18 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:44:18 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:44:18 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:44:18 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 74.99it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 74.61it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 74.24it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 73.96it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 73.70it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 73.61it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.30it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:05, 73.13it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 73.21it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 73.27it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 73.26it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.91it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.82it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 72.51it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 72.31it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 72.01it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 71.68it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 71.40it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:03, 71.03it/s]Evaluating:  37%|███▋      | 160/432 [00:02<00:03, 70.28it/s]Evaluating:  39%|███▉      | 168/432 [00:02<00:03, 69.68it/s]Evaluating:  41%|████      | 175/432 [00:02<00:03, 69.49it/s]Evaluating:  42%|████▏     | 182/432 [00:02<00:03, 69.01it/s]Evaluating:  44%|████▍     | 189/432 [00:02<00:03, 68.74it/s]Evaluating:  45%|████▌     | 196/432 [00:02<00:03, 68.40it/s]Evaluating:  47%|████▋     | 203/432 [00:02<00:03, 68.06it/s]Evaluating:  49%|████▊     | 210/432 [00:02<00:03, 67.69it/s]Evaluating:  50%|█████     | 217/432 [00:03<00:03, 67.32it/s]Evaluating:  52%|█████▏    | 224/432 [00:03<00:03, 67.02it/s]Evaluating:  53%|█████▎    | 231/432 [00:03<00:03, 66.59it/s]Evaluating:  55%|█████▌    | 238/432 [00:03<00:02, 66.08it/s]Evaluating:  57%|█████▋    | 245/432 [00:03<00:02, 65.55it/s]Evaluating:  58%|█████▊    | 252/432 [00:03<00:02, 64.87it/s]Evaluating:  60%|█████▉    | 259/432 [00:03<00:02, 64.30it/s]Evaluating:  62%|██████▏   | 266/432 [00:03<00:02, 64.01it/s]Evaluating:  63%|██████▎   | 273/432 [00:03<00:02, 63.72it/s]Evaluating:  65%|██████▍   | 280/432 [00:04<00:02, 63.50it/s]Evaluating:  66%|██████▋   | 287/432 [00:04<00:02, 63.55it/s]Evaluating:  68%|██████▊   | 294/432 [00:04<00:02, 63.48it/s]Evaluating:  70%|██████▉   | 301/432 [00:04<00:02, 63.40it/s]Evaluating:  71%|███████▏  | 308/432 [00:04<00:01, 63.33it/s]Evaluating:  73%|███████▎  | 315/432 [00:04<00:01, 63.28it/s]Evaluating:  75%|███████▍  | 322/432 [00:04<00:01, 63.30it/s]Evaluating:  76%|███████▌  | 329/432 [00:04<00:01, 63.19it/s]Evaluating:  78%|███████▊  | 336/432 [00:04<00:01, 62.89it/s]Evaluating:  79%|███████▉  | 343/432 [00:05<00:01, 62.60it/s]Evaluating:  81%|████████  | 350/432 [00:05<00:01, 62.33it/s]Evaluating:  83%|████████▎ | 357/432 [00:05<00:01, 62.09it/s]Evaluating:  84%|████████▍ | 364/432 [00:05<00:01, 61.74it/s]Evaluating:  86%|████████▌ | 371/432 [00:05<00:00, 61.63it/s]Evaluating:  88%|████████▊ | 378/432 [00:05<00:00, 61.38it/s]Evaluating:  89%|████████▉ | 385/432 [00:05<00:00, 61.25it/s]Evaluating:  91%|█████████ | 392/432 [00:05<00:00, 61.13it/s]Evaluating:  92%|█████████▏| 399/432 [00:05<00:00, 60.82it/s]Evaluating:  94%|█████████▍| 406/432 [00:06<00:00, 60.79it/s]Evaluating:  96%|█████████▌| 413/432 [00:06<00:00, 60.57it/s]Evaluating:  97%|█████████▋| 420/432 [00:06<00:00, 60.41it/s]Evaluating:  99%|█████████▉| 427/432 [00:06<00:00, 60.14it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.47it/s]
+05/05/2022 19:44:25 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:44:25 - INFO - __main__ -     f1 = 0.9106623159008731
+05/05/2022 19:44:25 - INFO - __main__ -     loss = 0.20323951817809416
+05/05/2022 19:44:25 - INFO - __main__ -     precision = 0.9065847234416154
+05/05/2022 19:44:25 - INFO - __main__ -     recall = 0.914776754075124
+05/05/2022 19:44:25 - INFO - Distillation -   Epoch 20 finished
+05/05/2022 19:44:25 - INFO - __main__ -   Saving model checkpoint to /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7
+05/05/2022 19:44:25 - INFO - transformers.configuration_utils -   Configuration saved in /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/config.json
+05/05/2022 19:44:26 - INFO - transformers.modeling_utils -   Model weights saved in /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/pytorch_model.bin
+05/05/2022 19:44:26 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:44:26 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/vocab.txt
+05/05/2022 19:44:26 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/added_tokens.json
+05/05/2022 19:44:26 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/special_tokens_map.json
+05/05/2022 19:44:26 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/tokenizer_config.json
+05/05/2022 19:44:26 - INFO - __main__ -   Evaluate the following checkpoints: ['/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7']
+05/05/2022 19:44:26 - INFO - transformers.configuration_utils -   loading configuration file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/config.json
+05/05/2022 19:44:26 - INFO - transformers.configuration_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 7,
+  "num_labels": 9,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 28996
+}
+
+05/05/2022 19:44:26 - INFO - transformers.modeling_utils -   loading weights file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/pytorch_model.bin
+05/05/2022 19:44:28 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_dev_teacher_128
+05/05/2022 19:44:28 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:44:28 - INFO - __main__ -     Num examples = 3250
+05/05/2022 19:44:28 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/407 [00:00<?, ?it/s]Evaluating:   2%|▏         | 7/407 [00:00<00:05, 69.68it/s]Evaluating:   4%|▎         | 15/407 [00:00<00:05, 72.86it/s]Evaluating:   6%|▌         | 23/407 [00:00<00:05, 73.76it/s]Evaluating:   8%|▊         | 31/407 [00:00<00:05, 74.28it/s]Evaluating:  10%|▉         | 39/407 [00:00<00:04, 74.50it/s]Evaluating:  12%|█▏        | 47/407 [00:00<00:04, 74.28it/s]Evaluating:  14%|█▎        | 55/407 [00:00<00:04, 73.95it/s]Evaluating:  15%|█▌        | 63/407 [00:00<00:04, 73.96it/s]Evaluating:  17%|█▋        | 71/407 [00:00<00:04, 73.94it/s]Evaluating:  19%|█▉        | 79/407 [00:01<00:04, 73.58it/s]Evaluating:  21%|██▏       | 87/407 [00:01<00:04, 73.40it/s]Evaluating:  23%|██▎       | 95/407 [00:01<00:04, 73.33it/s]Evaluating:  25%|██▌       | 103/407 [00:01<00:04, 72.94it/s]Evaluating:  27%|██▋       | 111/407 [00:01<00:04, 72.78it/s]Evaluating:  29%|██▉       | 119/407 [00:01<00:03, 72.24it/s]Evaluating:  31%|███       | 127/407 [00:01<00:03, 71.50it/s]Evaluating:  33%|███▎      | 135/407 [00:01<00:03, 71.21it/s]Evaluating:  35%|███▌      | 143/407 [00:01<00:03, 71.14it/s]Evaluating:  37%|███▋      | 151/407 [00:02<00:03, 70.95it/s]Evaluating:  39%|███▉      | 159/407 [00:02<00:03, 70.61it/s]Evaluating:  41%|████      | 167/407 [00:02<00:03, 70.27it/s]Evaluating:  43%|████▎     | 175/407 [00:02<00:03, 69.65it/s]Evaluating:  45%|████▍     | 182/407 [00:02<00:03, 69.32it/s]Evaluating:  46%|████▋     | 189/407 [00:02<00:03, 68.89it/s]Evaluating:  48%|████▊     | 196/407 [00:02<00:03, 68.50it/s]Evaluating:  50%|████▉     | 203/407 [00:02<00:02, 68.50it/s]Evaluating:  52%|█████▏    | 210/407 [00:02<00:02, 68.26it/s]Evaluating:  53%|█████▎    | 217/407 [00:03<00:02, 68.33it/s]Evaluating:  55%|█████▌    | 224/407 [00:03<00:02, 67.90it/s]Evaluating:  57%|█████▋    | 231/407 [00:03<00:02, 67.46it/s]Evaluating:  58%|█████▊    | 238/407 [00:03<00:02, 66.85it/s]Evaluating:  60%|██████    | 245/407 [00:03<00:02, 66.55it/s]Evaluating:  62%|██████▏   | 252/407 [00:03<00:02, 66.24it/s]Evaluating:  64%|██████▎   | 259/407 [00:03<00:02, 65.71it/s]Evaluating:  65%|██████▌   | 266/407 [00:03<00:02, 65.38it/s]Evaluating:  67%|██████▋   | 273/407 [00:03<00:02, 65.25it/s]Evaluating:  69%|██████▉   | 280/407 [00:04<00:01, 65.17it/s]Evaluating:  71%|███████   | 287/407 [00:04<00:01, 64.92it/s]Evaluating:  72%|███████▏  | 294/407 [00:04<00:01, 64.69it/s]Evaluating:  74%|███████▍  | 301/407 [00:04<00:01, 64.41it/s]Evaluating:  76%|███████▌  | 308/407 [00:04<00:01, 64.16it/s]Evaluating:  77%|███████▋  | 315/407 [00:04<00:01, 64.23it/s]Evaluating:  79%|███████▉  | 322/407 [00:04<00:01, 62.71it/s]Evaluating:  81%|████████  | 329/407 [00:04<00:01, 62.03it/s]Evaluating:  83%|████████▎ | 336/407 [00:04<00:01, 62.06it/s]Evaluating:  84%|████████▍ | 343/407 [00:05<00:01, 61.93it/s]Evaluating:  86%|████████▌ | 350/407 [00:05<00:00, 61.70it/s]Evaluating:  88%|████████▊ | 357/407 [00:05<00:00, 61.45it/s]Evaluating:  89%|████████▉ | 364/407 [00:05<00:00, 61.26it/s]Evaluating:  91%|█████████ | 371/407 [00:05<00:00, 60.95it/s]Evaluating:  93%|█████████▎| 378/407 [00:05<00:00, 60.80it/s]Evaluating:  95%|█████████▍| 385/407 [00:05<00:00, 60.52it/s]Evaluating:  96%|█████████▋| 392/407 [00:05<00:00, 60.34it/s]Evaluating:  98%|█████████▊| 399/407 [00:05<00:00, 60.06it/s]Evaluating: 100%|█████████▉| 406/407 [00:06<00:00, 59.88it/s]Evaluating: 100%|██████████| 407/407 [00:06<00:00, 67.07it/s]
+05/05/2022 19:44:35 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:44:35 - INFO - __main__ -     f1 = 0.9415917303975124
+05/05/2022 19:44:35 - INFO - __main__ -     loss = 0.08421019094078606
+05/05/2022 19:44:35 - INFO - __main__ -     precision = 0.9394600033540165
+05/05/2022 19:44:35 - INFO - __main__ -     recall = 0.943733153638814
+05/05/2022 19:44:35 - INFO - transformers.tokenization_utils -   Model name '/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1). Assuming '/home/hs3228/TextBrewer/output_model/conll_distill/student_layer7' is a path or url to a directory containing tokenizer files.
+05/05/2022 19:44:35 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/vocab.txt
+05/05/2022 19:44:35 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/added_tokens.json
+05/05/2022 19:44:35 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/special_tokens_map.json
+05/05/2022 19:44:35 - INFO - transformers.tokenization_utils -   loading file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/tokenizer_config.json
+05/05/2022 19:44:35 - INFO - transformers.configuration_utils -   loading configuration file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/config.json
+05/05/2022 19:44:35 - INFO - transformers.configuration_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 7,
+  "num_labels": 9,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 28996
+}
+
+05/05/2022 19:44:35 - INFO - transformers.modeling_utils -   loading weights file /home/hs3228/TextBrewer/output_model/conll_distill/student_layer7/pytorch_model.bin
+05/05/2022 19:44:37 - INFO - __main__ -   Loading features from cached file /home/hs3228/TextBrewer/data/conll/cached_test_teacher_128
+05/05/2022 19:44:37 - INFO - __main__ -   ***** Running evaluation  *****
+05/05/2022 19:44:37 - INFO - __main__ -     Num examples = 3453
+05/05/2022 19:44:37 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/432 [00:00<?, ?it/s]Evaluating:   2%|▏         | 8/432 [00:00<00:05, 75.71it/s]Evaluating:   4%|▎         | 16/432 [00:00<00:05, 75.19it/s]Evaluating:   6%|▌         | 24/432 [00:00<00:05, 74.93it/s]Evaluating:   7%|▋         | 32/432 [00:00<00:05, 74.70it/s]Evaluating:   9%|▉         | 40/432 [00:00<00:05, 74.51it/s]Evaluating:  11%|█         | 48/432 [00:00<00:05, 74.15it/s]Evaluating:  13%|█▎        | 56/432 [00:00<00:05, 73.81it/s]Evaluating:  15%|█▍        | 64/432 [00:00<00:05, 73.26it/s]Evaluating:  17%|█▋        | 72/432 [00:00<00:04, 72.92it/s]Evaluating:  19%|█▊        | 80/432 [00:01<00:04, 72.69it/s]Evaluating:  20%|██        | 88/432 [00:01<00:04, 72.31it/s]Evaluating:  22%|██▏       | 96/432 [00:01<00:04, 72.39it/s]Evaluating:  24%|██▍       | 104/432 [00:01<00:04, 72.14it/s]Evaluating:  26%|██▌       | 112/432 [00:01<00:04, 71.94it/s]Evaluating:  28%|██▊       | 120/432 [00:01<00:04, 71.90it/s]Evaluating:  30%|██▉       | 128/432 [00:01<00:04, 71.22it/s]Evaluating:  31%|███▏      | 136/432 [00:01<00:04, 70.73it/s]Evaluating:  33%|███▎      | 144/432 [00:01<00:04, 69.99it/s]Evaluating:  35%|███▌      | 152/432 [00:02<00:04, 69.51it/s]Evaluating:  37%|███▋      | 159/432 [00:02<00:03, 69.24it/s]Evaluating:  38%|███▊      | 166/432 [00:02<00:03, 68.86it/s]Evaluating:  40%|████      | 173/432 [00:02<00:03, 68.50it/s]Evaluating:  42%|████▏     | 180/432 [00:02<00:03, 68.01it/s]Evaluating:  43%|████▎     | 187/432 [00:02<00:03, 67.58it/s]Evaluating:  45%|████▍     | 194/432 [00:02<00:03, 67.21it/s]Evaluating:  47%|████▋     | 201/432 [00:02<00:03, 66.80it/s]Evaluating:  48%|████▊     | 208/432 [00:02<00:03, 66.43it/s]Evaluating:  50%|████▉     | 215/432 [00:03<00:03, 66.11it/s]Evaluating:  51%|█████▏    | 222/432 [00:03<00:03, 65.97it/s]Evaluating:  53%|█████▎    | 229/432 [00:03<00:03, 65.97it/s]Evaluating:  55%|█████▍    | 236/432 [00:03<00:02, 65.77it/s]Evaluating:  56%|█████▋    | 243/432 [00:03<00:02, 65.74it/s]Evaluating:  58%|█████▊    | 250/432 [00:03<00:02, 65.47it/s]Evaluating:  59%|█████▉    | 257/432 [00:03<00:02, 65.31it/s]Evaluating:  61%|██████    | 264/432 [00:03<00:02, 65.27it/s]Evaluating:  63%|██████▎   | 271/432 [00:03<00:02, 65.04it/s]Evaluating:  64%|██████▍   | 278/432 [00:04<00:02, 64.91it/s]Evaluating:  66%|██████▌   | 285/432 [00:04<00:02, 64.69it/s]Evaluating:  68%|██████▊   | 292/432 [00:04<00:02, 64.44it/s]Evaluating:  69%|██████▉   | 299/432 [00:04<00:02, 64.13it/s]Evaluating:  71%|███████   | 306/432 [00:04<00:01, 63.70it/s]Evaluating:  72%|███████▏  | 313/432 [00:04<00:01, 63.54it/s]Evaluating:  74%|███████▍  | 320/432 [00:04<00:01, 63.26it/s]Evaluating:  76%|███████▌  | 327/432 [00:04<00:01, 63.00it/s]Evaluating:  77%|███████▋  | 334/432 [00:04<00:01, 62.55it/s]Evaluating:  79%|███████▉  | 341/432 [00:05<00:01, 62.38it/s]Evaluating:  81%|████████  | 348/432 [00:05<00:01, 62.04it/s]Evaluating:  82%|████████▏ | 355/432 [00:05<00:01, 61.78it/s]Evaluating:  84%|████████▍ | 362/432 [00:05<00:01, 61.75it/s]Evaluating:  85%|████████▌ | 369/432 [00:05<00:01, 61.53it/s]Evaluating:  87%|████████▋ | 376/432 [00:05<00:00, 61.25it/s]Evaluating:  89%|████████▊ | 383/432 [00:05<00:00, 61.14it/s]Evaluating:  90%|█████████ | 390/432 [00:05<00:00, 60.67it/s]Evaluating:  92%|█████████▏| 397/432 [00:05<00:00, 60.20it/s]Evaluating:  94%|█████████▎| 404/432 [00:06<00:00, 60.22it/s]Evaluating:  95%|█████████▌| 411/432 [00:06<00:00, 60.14it/s]Evaluating:  97%|█████████▋| 418/432 [00:06<00:00, 60.00it/s]Evaluating:  98%|█████████▊| 425/432 [00:06<00:00, 59.61it/s]Evaluating: 100%|█████████▉| 431/432 [00:06<00:00, 59.33it/s]Evaluating: 100%|██████████| 432/432 [00:06<00:00, 66.17it/s]
+05/05/2022 19:44:44 - INFO - __main__ -   ***** Eval results  *****
+05/05/2022 19:44:44 - INFO - __main__ -     f1 = 0.9106623159008731
+05/05/2022 19:44:44 - INFO - __main__ -     loss = 0.20323951817809416
+05/05/2022 19:44:44 - INFO - __main__ -     precision = 0.9065847234416154
+05/05/2022 19:44:44 - INFO - __main__ -     recall = 0.914776754075124
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '.'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '2'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '-'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Norm'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Hewitt'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '('.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'New'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Zealand'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for ')'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for ','.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '1'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '-'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Nick'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Popplewell'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '('.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for 'Ireland'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for ')'.
+05/05/2022 19:44:44 - WARNING - __main__ -   Maximum sequence length exceeded: No prediction for '.'.
