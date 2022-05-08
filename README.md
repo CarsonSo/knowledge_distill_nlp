@@ -17,12 +17,12 @@ The goals of this project include:
 We conducted 4 experiments on 3 downstream tasks: Text classification, Sequence Labeling and Machine Reading Comprehension, where we study the impact of different distillation methods, teacher models, complexities and temperature by, comparing the performance of student models .
 
 ## Installation
-To install pakage 'TextBrewer', follow [TextBrewer repo](https://github.com/airaria/TextBrewer).
+To install pakage `TextBrewer`, follow [TextBrewer repo](https://github.com/airaria/TextBrewer).
 
 Another way to use codes of this repositary, you could install dependecies using 'pip install -r requirements.txt'.
 
 ## Data
-The dataset used in the project lies under folder 'data', which contains:
+The dataset used in the project lies under folder `data`, which contains:
 - coNLL-2003 (Named Entity Recognition)
 - CMRC (Chinese Machine Reading Comprehension)
 
