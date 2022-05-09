@@ -1,5 +1,5 @@
 absl-py==1.0.0
-backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+backcall==0.2.0
 boto3==1.22.7
 botocore==1.25.7
 cachetools==4.2.4
@@ -7,7 +7,7 @@ certifi==2021.5.30
 charset-normalizer==2.0.12
 click==8.0.4
 dataclasses==0.8
-decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+decorator==5.1.1
 entrypoints==0.3
 google-auth==2.6.6
 google-auth-oauthlib==0.4.6
@@ -15,32 +15,33 @@ grpcio==1.46.0
 idna==3.3
 importlib-metadata==4.8.3
 importlib-resources==5.4.0
-ipykernel @ file:///tmp/build/80754af9/ipykernel_1596206602906/work/dist/ipykernel-5.3.4-py3-none-any.whl
-ipython @ file:///tmp/build/80754af9/ipython_1593447367857/work
-ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+ipykernel==5.3.4
+ipython==7.16.1
+ipython-genutils==0.2.0
 jedi==0.17.0
 jmespath==0.10.0
 joblib==1.1.0
-jupyter-client @ file:///opt/conda/conda-bld/jupyter_client_1643638337975/work
-jupyter-core @ file:///tmp/build/80754af9/jupyter_core_1633420100582/work
+jupyter-client==7.1.2
+jupyter-core==4.8.1
 Markdown==3.3.6
-nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
+nest-asyncio==1.5.1
 nltk==3.6.7
 numpy==1.19.5
 oauthlib==3.2.0
 pandas==1.1.5
-parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
-pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
-pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+parso==0.8.3
+pexpect==4.8.0
+pickleshare==0.7.5
+pip==21.2.2
+prompt-toolkit==3.0.20
 protobuf==3.19.4
-ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+ptyprocess==0.7.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+Pygments==2.11.2
+python-dateutil==2.8.2
 pytz==2022.1
-pyzmq @ file:///tmp/build/80754af9/pyzmq_1628268400816/work
+pyzmq==22.2.1
 regex==2022.4.24
 requests==2.27.1
 requests-oauthlib==1.3.1
@@ -51,7 +52,8 @@ scikit-learn==0.24.2
 scipy==1.5.4
 sentencepiece==0.1.96
 seqeval==1.2.2
-six @ file:///tmp/build/80754af9/six_1644875935023/work
+setuptools==58.0.4
+six==1.16.0
 tensorboard==2.9.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
@@ -59,12 +61,13 @@ tensorboardX==2.5
 textbrewer==0.2.1.post1
 threadpoolctl==3.1.0
 torch==1.10.2
-tornado @ file:///tmp/build/80754af9/tornado_1606942266872/work
+tornado==6.1
 tqdm==4.64.0
-traitlets @ file:///tmp/build/80754af9/traitlets_1632746497744/work
+traitlets==4.3.3
 transformers==2.3.0
 typing_extensions==4.1.1
 urllib3==1.26.9
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+wcwidth==0.2.5
 Werkzeug==2.0.3
+wheel==0.37.1
 zipp==3.6.0
