@@ -66,5 +66,6 @@ To start distillation, you should also specify the directory of trained teacher 
 ### Check Performance
 You could use `check_model_performance.ipynb` to extract information about training and evaluatio results from logs under folder `log`.
 
-
+## Experiment Results
+![Screenshot](./pics/exp1.png)
 
