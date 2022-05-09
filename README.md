@@ -79,7 +79,7 @@ Experiment 3: Effect of convergence of teacher models on performance of student 
 Experiment 4: Effect of temperatures used in softmax on transferability of knowledge
 ![Screenshot](./pics/exp4.png)
 
-### Conclusion
+### Observation
 - More complex distillation method does not guarantee better performance for every task, but it will results in longer training time and more used  resources.
 - Increasing number of hidden layer would increase the student models’ ability of extracting textual information so it could achieve better results after distillation.
 - Under supervision of teacher models that are trained after different epoch numbers, student models with the same architecture achieve similar performance.
