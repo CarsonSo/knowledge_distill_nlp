@@ -30,6 +30,18 @@ The dataset used in the project lies under folder `data`, which contains:
 
 ## Usage
 ### Text Classification Task
+For the entire experiment:
+```
+cd TextClassification
+python sst2_train.py #Train teacher model
+python sst2_distill.py # Start distillation
+```
+For saving some time and not running the multi-teacher model:
+```
+cd TextClassification
+python sst2_train_single.py #Train teacher model
+python sst2_distill_single.py # Start distillation
+```
 
 ### Sequence Labeling Task
 ```
