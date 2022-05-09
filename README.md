@@ -67,5 +67,15 @@ To start distillation, you should also specify the directory of trained teacher 
 You could use `check_model_performance.ipynb` to extract information about training and evaluatio results from logs under folder `log`.
 
 ## Experiment Results
+Experiment 1: Effect of distillation method on performance of student models
 ![Screenshot](./pics/exp1.png)
+
+Experiment 2: Effect of #layers on performance of student models
+![Screenshot](./pics/exp2.png)
+
+Experiment 3: Effect of convergence of teacher models on performance of student models
+![Screenshot](./pics/exp3.png)
+
+Experiment 4: Effect of temperatures used in softmax on transferability of knowledge
+![Screenshot](./pics/exp4.png)
 
