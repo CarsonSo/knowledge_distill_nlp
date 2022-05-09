@@ -32,20 +32,20 @@ The dataset used in the project lies under folder `data`, which contains:
 ### Text Classification Task
 For the entire experiment:
 ```
-cd TextClassification
+cd code/TextClassification
 python sst2_train.py #Train teacher model
 python sst2_distill.py # Start distillation
 ```
 For saving some time and not running the multi-teacher model:
 ```
-cd TextClassification
+cd code/TextClassification
 python sst2_train_single.py #Train teacher model
 python sst2_distill_single.py # Start distillation
 ```
 
 ### Sequence Labeling Task
 ```
-cd TextBrewer/examples
+cd code/NER
 bash run_conll2003_train.sh # Train teacher model
 bash run_conll2003_distill_T3.sh # Start distillation
 ```
@@ -55,7 +55,7 @@ To start distillation, you should also specify the directory of trained teacher 
 
 ### Machine Reading Comprehension Task
 ```
-cd TextBrewer/examples
+cd code/MRC
 bash run_cmrc2018_train.sh.sh # Train teacher model
 bash run_cmrc2018_distill_T3.sh # Start distillation
 ```
